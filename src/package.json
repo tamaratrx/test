@@ -1,6 +1,6 @@
 {
-    "title": "New Age",
-    "name": "startbootstrap-new-age",
+    "title": "WD Test",
+    "name": "Web Developer Test",
     "version": "6.0.7",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
@@ -12,7 +12,7 @@
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
-    "description": "A one page app landing page HTML theme for Bootstrap.",
+    "description": "Web Developer Test.",
     "keywords": [
         "css",
         "sass",
@@ -21,19 +21,19 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/theme/new-age",
+    "homepage": "#",
     "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-new-age/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "#",
+        "email": "#"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "T",
     "contributors": [
-        "David Miller (https://davidmiller.io/)"
+        "#"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-new-age.git"
+        "url": "https://github.com/tamaratrx/test.git"
     },
     "dependencies": {
         "bootstrap": "5.2.3"
