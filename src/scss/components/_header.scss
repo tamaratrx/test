@@ -1,0 +1,113 @@
+// 
+// Header 
+// 
+
+// Header Section Styles
+.heroSection {
+  background-color: #f5f5f5;
+  padding: 40px;
+
+  &__banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+
+    &__sale {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    &__timer {
+      display: flex;
+      gap: 10px;
+      font-size: 1em;
+      font-weight: bold;
+      
+      .heroSection__time {
+        font-weight: bold;
+      }
+    }
+
+    &__shop-now {
+      background-color: $secondary-color;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  }
+
+  &__content {
+    text-align: center;
+    margin-top: 20px;
+
+    h2 {
+      font-size: 2em;
+      color: $primary-color;
+
+      .highlight {
+        color: $secondary-color;
+      }
+    }
+
+    p {
+      color: $text-color;
+      margin: 15px 0;
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+
+      .btn {
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+
+        &--primary {
+          background-color: $button-primary-bg;
+          color: white;
+        }
+
+        &--secondary {
+          background-color: $button-secondary-bg;
+          color: $button-primary-bg;
+          border: 1px solid $button-secondary-border;
+        }
+      }
+    }
+
+    &__video {
+      margin-top: 20px;
+      position: relative;
+
+      img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+
+      .heroSection__play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        font-size: 1.5em;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+      }
+    }
+  }
+}

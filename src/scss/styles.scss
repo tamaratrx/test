@@ -11,13 +11,15 @@
 @import "./global.scss";
 
 // Components
-@import "./components/navbar.scss";
+
 @import "./components/device-mockup.scss";
 @import "./components/banner.scss";
 @import "./components/rating.scss";
+@import "./components/header.scss";
+@import "./components/hero.scss";
 
 // Sections
 @import "./sections/cta.scss";
-@import "./sections/features.scss";
+
 @import "./sections/footer.scss";
-@import "./sections/masthead.scss";
+
