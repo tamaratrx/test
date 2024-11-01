@@ -1,113 +1,141 @@
 // 
-// Banner
+// Rating
 // 
-
-.banner {
-  background: url('../assets/img/banner-bg.webp') no-repeat;
-  background-position: 50%;
-  background-size: cover;
-  padding: 13px 16px;
+.rating-wrapper {
+    background-color: $grey-bg-color;
+   
+}
+.rating-component {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 
   @media (min-width: 769px) {
-    background: url('../assets/img/banner-bg.webp') no-repeat;
-    background-position: 50%;
-    background-size: cover;
+    margin: 0 auto;
   }
 
   @media (min-width: 1025px) {
-    background: url('../assets/img/banner-bg.webp') no-repeat;
-    background-position: 50%;
-    background-size: cover;
+    flex-direction: row;
+    gap: 0;
+    max-width: 1200px;
+    padding: 24px 0;
   }
 
-  @media (min-width: 1248px) {
-    padding: 13px 0;
+  @media (min-width: 1118px) {
+    gap: 10px;
+  }
+}
+
+.rating-component__customer-card {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  padding: 21px;
+  width: 100%;
+
+  @media (min-width: 1025px) {
+    gap: 10px;
+    max-width: 380px;
+    padding: 20.5px;
   }
 
-  background-color: #e7dddb; // Set a fallback background color
-  padding: 20px; // Padding for the banner
-
-  .banner-content {
-    display: flex; // Use flexbox for layout
-    justify-content: space-between; // Space out items evenly
-    align-items: center; // Center items vertically
-    flex-wrap: wrap; // Allow wrapping for responsive design
-
-    .banner-text {
-      flex: 1; // Take equal space
-      text-align: left; // Align text to the left
-      padding: 10px; // Padding for text
-
-      p {
-        margin: 0; // Remove default margin
-      }
-    }
-
-    .banner-countdown {
-      flex: 1; // Take equal space
-      display: flex; // Use flexbox for countdown layout
-      justify-content: center; // Center countdown
-      align-items: center; // Vertically align countdown
-
-      .countdown-timer {
-        display: flex; // Flexbox for countdown items
-        gap: 10px; // Space between items
-
-        .countdown-item {
-          display: flex; // Flexbox for each countdown item
-          flex-direction: column; // Stack number and label
-          align-items: center; // Center align
-
-          .countdown-number {
-            font-size: 2em; // Large font for numbers
-           
-          }
-
-          .countdown-label {
-            font-size: 0.8em; // Smaller font for labels
-            color: #333; // Label color
-          }
-        }
-      }
-    }
-
-    .banner-button {
-      flex: 1; // Take equal space
-      display: flex; // Use flexbox for button layout
-      justify-content: space-evenly;
-      padding: 10px; // Padding for button area
-
-      // Shop Now button styles
-      .shop-now-button {
-        width: 147px; // Width for the button
-        height: 35px; // Height for the button
-        padding: 8px 16px; // Inner padding
-        margin-right: 5px; // Space between buttons
-        color: #4BE2A6; // Text color
-        background-color: transparent; // Transparent background
-        border: 2px solid #4BE2A6; // Border color
-        border-radius: 5px; // Rounded corners
-        cursor: pointer; // Pointer on hover
-        text-decoration: none; // Remove underline from link
-        transition: background-color 0.3s ease; // Smooth transition
-
-        // Hover effect
-        &:hover {
-          background-color: rgba(75, 226, 166, 0.1); // Background on hover
-        }
-      }
-
-      // Close button styles
-      .close-button {
-        background-color: transparent; // Transparent background
-        border: none; // No border
-        cursor: pointer; // Pointer on hover
-
-        img {
-          width: 24px; // Adjust image width as necessary
-          height: auto; // Maintain aspect ratio
-        }
-      }
-    }
+  @media (min-width: 1118px) {
+    gap: 20px;
   }
+}
+
+.rating-component__customer-card__text {
+  align-items: center;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: space-between;
+
+  @media (min-width: 769px) {
+    gap: 8px;
+  }
+
+  @media (min-width: 1025px) {
+    gap: 5px;
+  }
+}
+
+.rating-component__customer-card__text__number_white,
+.rating-component__customer-card__text__number_black {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 32px;
+  text-align: center;
+}
+
+.rating-component__customer-card__text__number_white {
+  color: #fff;
+}
+
+.rating-component__customer-card__text__number_black {
+  color: #000;
+}
+
+.rating-component__customer-card__text__description_white,
+.rating-component__customer-card__text__description_black {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  opacity: 0.6;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: 1025px) {
+    font-size: 17px;
+    letter-spacing: 0.02em;
+    line-height: 130%;
+  }
+}
+
+.rating-component__customer-card__text__description_white {
+  color: #fff;
+}
+
+.rating-component__customer-card__text__description_black {
+  color: #000;
+}
+
+.rating-component__rating-cards {
+  align-items: center;
+  background: hsla(0, 0%, 100%, 0.05);
+  border-top: 1px solid #868e96;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 8px;
+  width: 100%;
+
+  @media (min-width: 768px) and (max-width: 837px) {
+    gap: 6px !important;
+  }
+
+  @media (min-width: 769px) {
+    height: 90px;
+    padding: 20px;
+  }
+
+  @media (min-width: 1025px) {
+    border-top: none;
+    flex-wrap: nowrap;
+    gap: 14px;
+    height: 100px;
+    padding: 24px;
+  }
+}
+
+.rating-component__rating-cards__card {
+  max-height: 100%;
+  max-width: 156px;
 }

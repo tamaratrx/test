@@ -16,132 +16,69 @@ body {
   font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
 
-.text-gradient {
-  background: -webkit-linear-gradient(#002855, #ff8c00);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 aside,
 section {
   padding-top: 0rem;
   padding-bottom: 0rem;
 }
 
-section.cta {
-  position: relative;
-  padding: 15rem 0;
-  background-image: url("https://source.unsplash.com/5g41N3uRPf8/1500x800");
-  background-position: center;
-  background-size: cover;
-}
-section.cta .cta-content {
-  position: relative;
-  z-index: 1;
-}
-section.cta:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+/*!
+ * html5-device-mockups (https://github.com/pixelsign/html5-device-mockups)
+ * Copyright 2013 - 2017 pixelsign
+ * Licensed under MIT (https://github.com/pixelsign/html5-device-mockups/blob/master/LICENSE.txt)
+ * Last Build: Tue Nov 14 2017 12:40:57
+ */
+.device-wrapper {
+  max-width: 300px;
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
 }
 
-.banner {
-  background-position: 50%;
+.device {
+  position: relative;
   background-size: cover;
-  padding: 13px 16px;
-  background-color: #e7dddb;
-  padding: 20px;
 }
-@media (min-width: 769px) {
-  .banner {
-    background: url("../assets/img/banner-bg.webp") no-repeat;
-    background-position: 50%;
-    background-size: cover;
-  }
+
+.device::after {
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
-@media (min-width: 1025px) {
-  .banner {
-    background: url("../assets/img/banner-bg.webp") no-repeat;
-    background-position: 50%;
-    background-size: cover;
-  }
+
+.device .screen {
+  position: absolute;
+  background-size: cover;
+  pointer-events: auto;
 }
-@media (min-width: 1248px) {
-  .banner {
-    padding: 13px 0;
-  }
-}
-.banner .banner-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.banner .banner-content .banner-text {
-  flex: 1;
-  text-align: left;
-  padding: 10px;
-}
-.banner .banner-content .banner-text p {
-  margin: 0;
-}
-.banner .banner-content .banner-countdown {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.banner .banner-content .banner-countdown .countdown-timer {
-  display: flex;
-  gap: 10px;
-}
-.banner .banner-content .banner-countdown .countdown-timer .countdown-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.banner .banner-content .banner-countdown .countdown-timer .countdown-item .countdown-number {
-  font-size: 2em;
-}
-.banner .banner-content .banner-countdown .countdown-timer .countdown-item .countdown-label {
-  font-size: 0.8em;
-  color: #333;
-}
-.banner .banner-content .banner-button {
-  flex: 1;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 10px;
-}
-.banner .banner-content .banner-button .shop-now-button {
-  width: 147px;
-  height: 35px;
-  padding: 8px 16px;
-  margin-right: 5px;
-  color: #4BE2A6;
-  background-color: transparent;
-  border: 2px solid #4BE2A6;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-.banner .banner-content .banner-button .shop-now-button:hover {
-  background-color: rgba(75, 226, 166, 0.1);
-}
-.banner .banner-content .banner-button .close-button {
-  background-color: transparent;
-  border: none;
+
+.device .button {
+  position: absolute;
   cursor: pointer;
 }
-.banner .banner-content .banner-button .close-button img {
-  width: 24px;
-  height: auto;
+
+.device[data-device=iPhoneX][data-orientation=portrait][data-color=black] {
+  padding-bottom: 198.898071625%;
+}
+
+.device[data-device=iPhoneX][data-orientation=portrait][data-color=black] .screen {
+  top: 3.1855955679%;
+  left: 6.8870523416%;
+  width: 86.2258953168%;
+  height: 93.6288088643%;
+}
+
+.device[data-device=iPhoneX][data-orientation=portrait][data-color=black]::after {
+  content: "";
+  background-image: url("../assets/img/portrait_black.png");
+}
+
+.device[data-device=iPhoneX][data-orientation=portrait][data-color=black] .button {
+  display: none;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
 }
 
 .banner {
@@ -237,6 +174,157 @@ section.cta:before {
 .banner .banner-content .banner-button .close-button img {
   width: 24px;
   height: auto;
+}
+
+.rating-wrapper {
+  background-color: #E5E5E5;
+}
+
+.rating-component {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+@media (min-width: 769px) {
+  .rating-component {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  .rating-component {
+    flex-direction: row;
+    gap: 0;
+    max-width: 1200px;
+    padding: 24px 0;
+  }
+}
+@media (min-width: 1118px) {
+  .rating-component {
+    gap: 10px;
+  }
+}
+
+.rating-component__customer-card {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  padding: 21px;
+  width: 100%;
+}
+@media (min-width: 1025px) {
+  .rating-component__customer-card {
+    gap: 10px;
+    max-width: 380px;
+    padding: 20.5px;
+  }
+}
+@media (min-width: 1118px) {
+  .rating-component__customer-card {
+    gap: 20px;
+  }
+}
+
+.rating-component__customer-card__text {
+  align-items: center;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: space-between;
+}
+@media (min-width: 769px) {
+  .rating-component__customer-card__text {
+    gap: 8px;
+  }
+}
+@media (min-width: 1025px) {
+  .rating-component__customer-card__text {
+    gap: 5px;
+  }
+}
+
+.rating-component__customer-card__text__number_white,
+.rating-component__customer-card__text__number_black {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 32px;
+  text-align: center;
+}
+
+.rating-component__customer-card__text__number_white {
+  color: #fff;
+}
+
+.rating-component__customer-card__text__number_black {
+  color: #000;
+}
+
+.rating-component__customer-card__text__description_white,
+.rating-component__customer-card__text__description_black {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  opacity: 0.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-width: 1025px) {
+  .rating-component__customer-card__text__description_white,
+  .rating-component__customer-card__text__description_black {
+    font-size: 17px;
+    letter-spacing: 0.02em;
+    line-height: 130%;
+  }
+}
+
+.rating-component__customer-card__text__description_white {
+  color: #fff;
+}
+
+.rating-component__customer-card__text__description_black {
+  color: #000;
+}
+
+.rating-component__rating-cards {
+  align-items: center;
+  background: hsla(0, 0%, 100%, 0.05);
+  border-top: 1px solid #868e96;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 8px;
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 837px) {
+  .rating-component__rating-cards {
+    gap: 6px !important;
+  }
+}
+@media (min-width: 769px) {
+  .rating-component__rating-cards {
+    height: 90px;
+    padding: 20px;
+  }
+}
+@media (min-width: 1025px) {
+  .rating-component__rating-cards {
+    border-top: none;
+    flex-wrap: nowrap;
+    gap: 14px;
+    height: 100px;
+    padding: 24px;
+  }
+}
+
+.rating-component__rating-cards__card {
+  max-height: 100%;
+  max-width: 156px;
 }
 
 .heroSection {
@@ -879,13 +967,4 @@ section.cta:before {
   .hero-wrapper-agency__hero__section__buttons-and-description__description {
     max-width: 350px;
   }
-}
-
-footer a {
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: none;
-}
-footer a:hover, footer a:active, footer a:focus {
-  color: rgba(255, 255, 255, 0.75);
-  text-decoration: underline;
 }

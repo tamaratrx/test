@@ -20,12 +20,7 @@ body {
     font-family: $alt-font-family !important;
 }
 
-.text-gradient {
-    background: -webkit-linear-gradient(#{$primary}, #{$secondary});
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 
 // Padding for sections
 

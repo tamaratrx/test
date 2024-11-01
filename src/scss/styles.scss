@@ -12,15 +12,14 @@
 
 // Components
 
+@import "./components/device-mockup.scss";
+@import "./components/banner.scss";
 
 
 
 // Sections
-@import "./sections/cta.scss";
-@import "./sections/banner.scss";
 @import "./sections/rating.scss";
 @import "./sections/header.scss";
 @import "./sections/hero.scss";
 
-@import "./sections/footer.scss";
 
