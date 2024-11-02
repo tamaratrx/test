@@ -3,19 +3,22 @@
 // 
 
 .banner {
-  background: url('../assets/img/banner-bg.webp') no-repeat;
+  background: url('../assets/img/banner-background.png') no-repeat;
+  background-color: $black;
   background-position: 50%;
   background-size: cover;
   padding: 13px 16px;
 
   @media (min-width: 769px) {
-    background: url('../assets/img/banner-bg.webp') no-repeat;
+    background: url('../assets/img/banner-background.png') no-repeat;
+	  background-color: $black;
     background-position: 50%;
     background-size: cover;
   }
 
   @media (min-width: 1025px) {
-    background: url('../assets/img/banner-bg.webp') no-repeat;
+    background: url('../assets/img/banner-background.png') no-repeat;
+	  background-color: $black;
     background-position: 50%;
     background-size: cover;
   }
@@ -24,7 +27,7 @@
     padding: 13px 0;
   }
 
-  background-color: #e7dddb; // Set a fallback background color
+  background-color: #000; // Set a fallback background color
   padding: 20px; 
 
   .banner-content {
@@ -86,8 +89,8 @@
         height: 35px; 
         padding: 8px 16px; 
         margin-right: 5px; 
-        color: #4BE2A6; 
-        background-color: transparent; 
+        color: #222; 
+        background-color: 4BE2A6; 
         border: 2px solid #4BE2A6;
         border-radius: 5px; 
         cursor: pointer; 
