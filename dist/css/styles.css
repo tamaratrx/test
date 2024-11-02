@@ -516,7 +516,7 @@ section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 240px;
+  height: 340px;
 }
 .header-wrapper__header__menu__nav__links__dropdown__who-is-it-for__industry__industry-items__section-title {
   color: #66728a;
@@ -703,16 +703,6 @@ section {
   transition: 0.2s ease-in-out;
 }
 
-.header-wrapper__header__menu__nav__links__dropdown__who-is-it-for {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-.header-wrapper__header__menu__nav__links__dropdown__who-is-it-for.show {
-  visibility: visible;
-  opacity: 1;
-}
-
 @media (max-width: 1024px) {
   .header-wrapper__header__menu__nav-buttons .btn-link__orange {
     display: none;
@@ -743,38 +733,6 @@ section {
   display: flex;
   flex-direction: row;
   gap: 20px;
-}
-.header-wrapper__header__menu__nav-buttons .tw-button__brown,
-.header-wrapper__header__menu__nav-buttons .tw-button__light-blue,
-.header-wrapper__header__menu__nav-buttons .tw-button__orange,
-.header-wrapper__header__menu__nav-buttons .tw-button__pink,
-.header-wrapper__header__menu__nav-buttons .tw-button__primary,
-.header-wrapper__header__menu__nav-buttons .tw-button__primary-dark-blue,
-.header-wrapper__header__menu__nav-buttons .tw-button__primary-dark-green,
-.header-wrapper__header__menu__nav-buttons .tw-button__primary-green,
-.header-wrapper__header__menu__nav-buttons .tw-button__primary-light-green,
-.header-wrapper__header__menu__nav-buttons .tw-button__primary-purple,
-.header-wrapper__header__menu__nav-buttons .tw-button__red,
-.header-wrapper__header__menu__nav-buttons .tw-button__sky-blue,
-.header-wrapper__header__menu__nav-buttons .tw-button__yellow {
-  display: none;
-}
-@media (min-width: 1025px) {
-  .header-wrapper__header__menu__nav-buttons .tw-button__brown,
-  .header-wrapper__header__menu__nav-buttons .tw-button__light-blue,
-  .header-wrapper__header__menu__nav-buttons .tw-button__orange,
-  .header-wrapper__header__menu__nav-buttons .tw-button__pink,
-  .header-wrapper__header__menu__nav-buttons .tw-button__primary,
-  .header-wrapper__header__menu__nav-buttons .tw-button__primary-dark-blue,
-  .header-wrapper__header__menu__nav-buttons .tw-button__primary-dark-green,
-  .header-wrapper__header__menu__nav-buttons .tw-button__primary-green,
-  .header-wrapper__header__menu__nav-buttons .tw-button__primary-light-green,
-  .header-wrapper__header__menu__nav-buttons .tw-button__primary-purple,
-  .header-wrapper__header__menu__nav-buttons .tw-button__red,
-  .header-wrapper__header__menu__nav-buttons .tw-button__sky-blue,
-  .header-wrapper__header__menu__nav-buttons .tw-button__yellow {
-    display: flex;
-  }
 }
 .header-wrapper__header__menu__nav-buttons .login_btn {
   border-radius: 4px;
