@@ -34,7 +34,7 @@
   gap: 20px;
   justify-content: center;
   padding: 21px;
-  width: 100%;
+  
 
   @media (min-width: 1025px) {
     gap: 10px;
@@ -107,7 +107,7 @@ color: $black;
   gap: 20px;
   justify-content: center;
   padding: 8px;
-  width: 100%;
+ 
 
   @media (min-width: 768px) and (max-width: 837px) {
     gap: 6px !important;

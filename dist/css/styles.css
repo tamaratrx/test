@@ -250,6 +250,16 @@ section {
     padding: 0;
   }
 }
+@media (max-width: 1024px) {
+  .header-wrapper__header__menu {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .header-wrapper__header__menu {
+    width: 85%;
+  }
+}
 .header-wrapper__header__menu__right {
   display: flex;
 }
@@ -709,6 +719,86 @@ section {
   }
 }
 
+.header-wrapper__header__menu__nav-buttons .login_btn {
+  border-radius: 4px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+@media (min-width: 1025px) {
+  .header-wrapper__header__menu__nav-buttons .login_btn {
+    display: none;
+  }
+  .header-wrapper__header__menu__nav-buttons .login_btn:hover {
+    background-color: #4d536c;
+  }
+}
+
+.header-wrapper__header__menu__nav-buttons {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.header-wrapper__header__menu__nav-buttons .tw-button__brown,
+.header-wrapper__header__menu__nav-buttons .tw-button__light-blue,
+.header-wrapper__header__menu__nav-buttons .tw-button__orange,
+.header-wrapper__header__menu__nav-buttons .tw-button__pink,
+.header-wrapper__header__menu__nav-buttons .tw-button__primary,
+.header-wrapper__header__menu__nav-buttons .tw-button__primary-dark-blue,
+.header-wrapper__header__menu__nav-buttons .tw-button__primary-dark-green,
+.header-wrapper__header__menu__nav-buttons .tw-button__primary-green,
+.header-wrapper__header__menu__nav-buttons .tw-button__primary-light-green,
+.header-wrapper__header__menu__nav-buttons .tw-button__primary-purple,
+.header-wrapper__header__menu__nav-buttons .tw-button__red,
+.header-wrapper__header__menu__nav-buttons .tw-button__sky-blue,
+.header-wrapper__header__menu__nav-buttons .tw-button__yellow {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .header-wrapper__header__menu__nav-buttons .tw-button__brown,
+  .header-wrapper__header__menu__nav-buttons .tw-button__light-blue,
+  .header-wrapper__header__menu__nav-buttons .tw-button__orange,
+  .header-wrapper__header__menu__nav-buttons .tw-button__pink,
+  .header-wrapper__header__menu__nav-buttons .tw-button__primary,
+  .header-wrapper__header__menu__nav-buttons .tw-button__primary-dark-blue,
+  .header-wrapper__header__menu__nav-buttons .tw-button__primary-dark-green,
+  .header-wrapper__header__menu__nav-buttons .tw-button__primary-green,
+  .header-wrapper__header__menu__nav-buttons .tw-button__primary-light-green,
+  .header-wrapper__header__menu__nav-buttons .tw-button__primary-purple,
+  .header-wrapper__header__menu__nav-buttons .tw-button__red,
+  .header-wrapper__header__menu__nav-buttons .tw-button__sky-blue,
+  .header-wrapper__header__menu__nav-buttons .tw-button__yellow {
+    display: flex;
+  }
+}
+.header-wrapper__header__menu__nav-buttons .login_btn {
+  border-radius: 4px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+@media (min-width: 1025px) {
+  .header-wrapper__header__menu__nav-buttons .login_btn {
+    display: none;
+  }
+  .header-wrapper__header__menu__nav-buttons .login_btn:hover {
+    background-color: #4d536c;
+  }
+}
+.header-wrapper__header__menu__nav-buttons__book-a-demo {
+  display: flex;
+  text-decoration: none;
+}
+
 .hero-wrapper-agency {
   background: #fff;
 }
@@ -1146,7 +1236,6 @@ section {
   gap: 20px;
   justify-content: center;
   padding: 21px;
-  width: 100%;
 }
 @media (min-width: 1025px) {
   .rating-inner__agencies {
@@ -1223,7 +1312,6 @@ section {
   gap: 20px;
   justify-content: center;
   padding: 8px;
-  width: 100%;
 }
 @media (min-width: 768px) and (max-width: 837px) {
   .rating-inner__rating-logos {

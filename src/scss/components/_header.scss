@@ -71,6 +71,15 @@ background: $primary-color;
 
             @media (min-width: 1025px) {
                 padding: 0;
+				
+            }
+			@media (max-width: 1024px) {
+              width: 90%;
+				
+            }
+			@media (max-width:768px) {
+              width: 85%;
+				
             }
 
             &__right {
@@ -567,4 +576,86 @@ background: $primary-color;
       display: none;
     }
   }
+}
+.header-wrapper {
+    &__header {
+        &__menu {
+            &__nav-buttons {
+                .login_btn {
+                    border-radius: 4px;
+                    color: #fff;
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    padding: 10px;
+                    text-decoration: none;
+                    transition: background-color .3s ease;
+
+                    @media (min-width: 1025px) {
+                        display: none;
+
+                        &:hover {
+                            background-color: #4d536c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.header-wrapper {
+    &__header {
+        &__menu {
+            &__nav-buttons {
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+
+                .tw-button__brown,
+                .tw-button__light-blue,
+                .tw-button__orange,
+                .tw-button__pink,
+                .tw-button__primary,
+                .tw-button__primary-dark-blue,
+                .tw-button__primary-dark-green,
+                .tw-button__primary-green,
+                .tw-button__primary-light-green,
+                .tw-button__primary-purple,
+                .tw-button__red,
+                .tw-button__sky-blue,
+                .tw-button__yellow {
+                    display: none;
+
+                    @media (min-width: 1025px) {
+                        display: flex;
+                    }
+                }
+
+                .login_btn {
+                    border-radius: 4px;
+                    color: #fff;
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    padding: 10px;
+                    text-decoration: none;
+                    transition: background-color .3s ease;
+
+                    @media (min-width: 1025px) {
+                        display: none;
+
+                        &:hover {
+                            background-color: #4d536c;
+                        }
+                    }
+                }
+
+                &__book-a-demo {
+                    display: flex;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }

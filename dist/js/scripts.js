@@ -7,31 +7,29 @@
 // Scripts
 // 
 
-window.addEventListener('DOMContentLoaded', event => {
+document.addEventListener('DOMContentLoaded', function () {
+    const dropdownButtons = document.querySelectorAll('.header-wrapper__header__menu__nav__links__dropdown__dropbtn');
 
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 74,
-        });
-    };
-
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
+    dropdownButtons.forEach(button => {
+        button.addEventListener('click', function (event) {
+            event.stopPropagation(); // Prevent click from bubbling up
+            const dropdownContent = this.parentElement.querySelector('.header-wrapper__header__menu__nav__links__dropdown__who-is-it-for');
+            
+            // Toggle visibility of the dropdown
+            if (dropdownContent) {
+                dropdownContent.classList.toggle('show');
             }
         });
     });
 
+    // Close dropdown if clicked outside
+    window.addEventListener('click', function () {
+        document.querySelectorAll('.header-wrapper__header__menu__nav__links__dropdown__who-is-it-for.show').forEach(dropdown => {
+            dropdown.classList.remove('show');
+        });
+    });
 });
+
 
  // Placeholder image with video
 function embedVideo() {
