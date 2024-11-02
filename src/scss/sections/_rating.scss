@@ -27,14 +27,14 @@
   }
 }
 
-.rating-inner__customer-card {
+.rating-inner__agencies {
   align-items: center;
   display: flex;
   flex-direction: row;
   gap: 20px;
   justify-content: center;
   padding: 21px;
-  width: 100%;
+  
 
   @media (min-width: 1025px) {
     gap: 10px;
@@ -47,7 +47,7 @@
   }
 }
 
-.rating-inner__customer-card__text {
+.rating-inner__agencies__text {
   align-items: center;
   color: #000;
   display: flex;
@@ -64,29 +64,25 @@
   }
 }
 
-.rating-inner__customer-card__text__number_white,
-.rating-inner__customer-card__text__number_black {
+.rating-inner__agencies__text__number_black {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.01em;
   line-height: 32px;
   text-align: center;
 }
 
-.rating-inner__customer-card__text__number_white {
-  color: #fff;
+
+.rating-inner__agencies__text__number_black {
+  color: $black;
 }
 
-.rating-inner__customer-card__text__number_black {
-  color: #000;
-}
-
-.rating-inner__customer-card__text__description_white,
-.rating-inner__customer-card__text__description_black {
-  font-size: 15px;
+.rating-inner__agencies__text__description_black {
+  font-size: 17px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 22px;
   opacity: 0.6;
+  letter-spacing: 0.02em;
   text-align: center;
   text-transform: uppercase;
 
@@ -97,15 +93,11 @@
   }
 }
 
-.rating-inner__customer-card__text__description_white {
-  color: #fff;
+.rating-inner__agencies__text__description_black {
+color: $black;
 }
 
-.rating-inner__customer-card__text__description_black {
-  color: #000;
-}
-
-.rating-inner__rating-cards {
+.rating-inner__rating-logos {
   align-items: center;
   background: hsla(0, 0%, 100%, 0.05);
   border-top: 1px solid #868e96;
@@ -115,7 +107,7 @@
   gap: 20px;
   justify-content: center;
   padding: 8px;
-  width: 100%;
+ 
 
   @media (min-width: 768px) and (max-width: 837px) {
     gap: 6px !important;
@@ -135,7 +127,7 @@
   }
 }
 
-.rating-inner__rating-cards__card {
+.rating-inner__rating-logos__logo {
   max-height: 100%;
   max-width: 156px;
 }

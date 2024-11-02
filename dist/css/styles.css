@@ -494,7 +494,7 @@ section {
   align-items: flex-start;
   background: var(--white, #fff);
   border-radius: 8px;
-  box-shadow: 0 12px 16px -4px rgba(16, 24, 40, 0.08), 0 4px 6px -2px rgba(16, 24, 40, 0.03);
+  box-shadow: 0px 0px 16px 0 rgba(16, 24, 40, 0.08), 0 0 6px 0 rgba(16, 24, 40, 0.08);
   display: flex;
   left: -361px;
   position: absolute;
@@ -516,27 +516,27 @@ section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 340px;
+  height: 400px;
 }
 .header-wrapper__header__menu__nav__links__dropdown__who-is-it-for__industry__industry-items__section-title {
-  color: #66728a;
+  color: #14213D;
   font-family: "Questrial", sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.36px;
-  line-height: 120%;
+  line-height: 15px;
   padding: 4px 8px 12px;
   text-transform: uppercase;
 }
 .header-wrapper__header__menu__nav__links__dropdown__who-is-it-for__industry__industry-items__link {
   align-items: center;
   border-radius: 4px;
-  color: #00143c;
+  color: #14213D;
   display: flex;
   font-size: 15px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   gap: 4px;
   letter-spacing: -0.35px;
   line-height: 24px;
@@ -559,7 +559,7 @@ section {
 .header-wrapper__header__menu__nav__links__dropdown__who-is-it-for__book-a-demo {
   align-items: center;
   align-self: stretch;
-  background: #f2f6fe;
+  background: #E5E5E5;
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
@@ -574,26 +574,29 @@ section {
   gap: 4px;
 }
 .header-wrapper__header__menu__nav__links__dropdown__who-is-it-for__book-a-demo__cant-find-text__headline {
-  color: #00143c;
+  color: #14213D;
   font-family: "Questrial", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
+  margin: 0px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.14px;
-  line-height: 130%;
+  line-height: 20px;
 }
 .header-wrapper__header__menu__nav__links__dropdown__who-is-it-for__book-a-demo__cant-find-text__desc {
-  color: #66728a;
+  color: #14213D;
   font-family: "Questrial", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
+  margin: 0px;
+  opacity: 0.6;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 22px;
 }
 .header-wrapper__header__menu__nav__links__dropdown__who-is-it-for__right-col {
   align-items: flex-start;
   align-self: stretch;
-  background: #f2f6fe;
+  background: #E5E5E5;
   border-radius: 0 8px 8px 0;
   display: flex;
   flex-direction: column;
@@ -678,13 +681,13 @@ section {
   gap: 4px;
 }
 .header-wrapper__header__menu__nav__links__dropdown__who-is-it-for-res__industry__demo__text__title {
-  color: #00143c;
+  color: #14213D;
   font-family: "Questrial", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0.14px;
-  line-height: 130%;
+  line-height: 20px;
 }
 .header-wrapper__header__menu__nav__links__dropdown__who-is-it-for-res__industry__demo__text__desc {
   color: #66728a;
@@ -755,6 +758,30 @@ section {
 .header-wrapper__header__menu__nav-buttons__book-a-demo {
   display: flex;
   text-decoration: none;
+}
+
+.btn-link__demo {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #14213D !important;
+  color: #14213D !important;
+  height: 42px;
+  line-height: 24px;
+  padding: 7px 24px;
+  transition: background 0.2s ease-in-out;
+}
+.btn-link__demo:hover {
+  background: #f2f6fe;
+}
+
+.header-wrapper__header__menu__nav__links__dropdown__who-is-it-for {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.header-wrapper__header__menu__nav__links__dropdown__who-is-it-for.show {
+  visibility: visible;
+  opacity: 1;
 }
 
 .hero-wrapper-agency {

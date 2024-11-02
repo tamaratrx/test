@@ -7,6 +7,8 @@
 // Scripts
 // 
 
+//Main nav dropdown element
+
 document.addEventListener('DOMContentLoaded', function () {
     const dropdownButtons = document.querySelectorAll('.header-wrapper__header__menu__nav__links__dropdown__dropbtn');
 
@@ -30,8 +32,29 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//Banner Closing
 
- // Placeholder image with video
+
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get the close button element
+        const closeButton = document.querySelector('.close-button');
+
+        // Add a click event listener to the close button
+        closeButton.addEventListener('click', function(event) {
+            // Prevent the default anchor behavior
+            event.preventDefault();
+            // Get the parent banner element
+            const banner = document.querySelector('.banner-content').parentElement;
+            // Hide the banner
+            banner.style.display = 'none';
+        });
+    });
+
+
+	
+	
+// Placeholder image with video
+
 function embedVideo() {
         const imagePlaceholder = document.getElementById('imagePlaceholder');
         const videoWrapper = document.getElementById('videoWrapper');
@@ -42,7 +65,8 @@ function embedVideo() {
     }
 
 	
- //Countdown	
+//Countdown	
+
 // Set the date we're counting down to
 const countdownDate = new Date("December 31, 2024 23:59:59").getTime();
 
