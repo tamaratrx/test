@@ -67,14 +67,22 @@
                                     </div>
                                     <div class="header-wrapper__header__menu">
                                         <div class="header-wrapper__header__menu__logo">
-                                            <a aria-current="page" class="" href="index.html">
-                                                <img
-                                                    src="assets/img/logo.png"
-                                                    alt="logo"
-                                                    loading="lazy"
-                                                />
-                                            </a>
-                                        </div>
+    <a aria-current="page" class="" href="index.html">
+        <img
+            class="logo-desktop"
+            src="assets/img/logo.png"
+            alt="logo"
+            loading="lazy"
+        />
+        <img
+            class="logo-mobile"
+            src="assets/img/logo-mobile.png" 
+            alt="mobile logo"
+            loading="lazy"
+        />
+    </a>
+</div>
+
                                         <div class="header-wrapper__header__menu__right">
                                             <div class="header-wrapper__header__menu__nav">
                                                 <div class="header-wrapper__header__menu__nav__links">
@@ -258,7 +266,79 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+									<div class="header-wrapper__header__expanded">
+    <div class="header-wrapper__header__expanded__menu">
+        <div class="header-wrapper__header__expanded__menu__logo">
+            <a aria-current="page" class="" href="/">
+                <img
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgMTAwIDMwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMTQuOTk1NyA3LjQ5OTEzQzE3LjA2NjUgNy40OTkxMyAxOC43NDUyIDUuODIwMzkgMTguNzQ1MiAzLjc0OTU2QzE4Ljc0NTIgMS42Nzg3NCAxNy4wNjY1IDAgMTQuOTk1NyAwQzEyLjkyNDggMCAxMS4yNDYxIDEuNjc4NzQgMTEuMjQ2MSAzLjc0OTU2QzExLjI0NjEgNS44MjAzOSAxMi45MjQ4IDcuNDk5MTMgMTQuOTk1NyA3LjQ5OTEzWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTI2LjI0NTcgNy40OTkxM0MyOC4zMTY1IDcuNDk5MTMgMjkuOTk1MiA1LjgyMDM5IDI5Ljk5NTIgMy43NDk1NkMyOS45OTUyIDEuNjc4NzQgMjguMzE2NSAwIDI2LjI0NTcgMEMyNC4xNzQ4IDAgMjIuNDk2MSAxLjY3ODc0IDIyLjQ5NjEgMy43NDk1NkMyMi40OTYxIDUuODIwMzkgMjQuMTc0OCA3LjQ5OTEzIDI2LjI0NTcgNy40OTkxM1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xNC45OTU3IDI5Ljk5NjJDMTcuMDY2NSAyOS45OTYyIDE4Ljc0NTIgMjguMzE3NSAxOC43NDUyIDI2LjI0NjZDMTguNzQ1MiAyNC4xNzU4IDE3LjA2NjUgMjIuNDk3MSAxNC45OTU3IDIyLjQ5NzFDMTIuOTI0OCAyMi40OTcxIDExLjI0NjEgMjQuMTc1OCAxMS4yNDYxIDI2LjI0NjZDMTEuMjQ2MSAyOC4zMTc1IDEyLjkyNDggMjkuOTk2MiAxNC45OTU3IDI5Ljk5NjJaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMjYuMjQ3IDIyLjQ5NzRDMjYuMDQ3OCAyMi40OTc0IDI1Ljg0ODYgMjIuNTIwOCAyNS42NjExIDIyLjU0NDNDMjMuMDcxNSAyMi45NTQ0IDE5LjMzMzcgMTkuNjAzMiAxOC43NDc4IDE2Ljc2NzZWMTMuMTIzNUMxOC43NDc4IDEyLjA5MjMgMTcuOTA0MiAxMS4yNDg3IDE2Ljg3MyAxMS4yNDg3SDEzLjIyODlDMTAuODAzNCAxMC43NDQ4IDguMDAyOTggNy45NDQzOSA3LjQ5OTEzIDUuNTE4ODlWMEgwVjcuNDk5MTNINS41MTg4OUM3Ljk0NDM5IDguMDAyOTggMTAuNzQ0OCAxMC44MDM0IDExLjI0ODcgMTMuMjI4OVYxNi44NzNDMTEuMjQ4NyAxNy45MDQyIDEyLjA5MjMgMTguNzQ3OCAxMy4xMjM1IDE4Ljc0NzhIMTYuNzY3NkMxOS42MDMyIDE5LjMzMzcgMjIuOTU0NCAyMy4wNzE1IDIyLjU0NDMgMjUuNjYxMUMyMi41MDkxIDI1Ljg0ODYgMjIuNDk3NCAyNi4wNDc4IDIyLjQ5NzQgMjYuMjQ3QzIyLjQ5NzQgMjguNTY3IDI0LjU5NDggMzAuMzk0OSAyNi45OTY5IDI5LjkyNjJDMjguNDYxNSAyOS42NDUgMjkuNjMzMyAyOC40NjE1IDI5LjkyNjIgMjYuOTk2OUMzMC4zOTQ5IDI0LjU5NDggMjguNTY3IDIyLjQ5NzQgMjYuMjQ3IDIyLjQ5NzRaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNDAgMTAuMjE2Nkg0NC4xMjE0VjIzLjc1MzRINDcuOTkwOVYxMC4yMTY2SDUyLjExMjJWNi41NjczOEg0MFYxMC4yMTY2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTU5LjIwMDIgMTEuODMxMUM1Ny43MDA0IDExLjgzMTEgNTYuMzI2NyAxMi45MDM2IDU1LjggMTQuOTk5NVYxMi4xMjY5SDUyLjI5NjlWMjMuNzUyOEg1NS45ODMyVjE5LjkzMDlDNTUuOTgzMiAxNi42MzkyIDU2LjcyNzMgMTUuNTkxMyA1OC4yMjcxIDE1LjU5MTNDNTguODMzOCAxNS41OTEzIDU5LjM4MzMgMTUuNjg5OSA1OS44OTg1IDE1Ljg4NzJMNjAuODAyOSAxMi4xMzkzQzYwLjM1NjQgMTEuOTI5NyA1OS44Mjk4IDExLjgzMTEgNTkuMjAwMiAxMS44MzExWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTY5LjA0MzIgMTIuMTM5OVYxMy4zODUxQzY4LjM5MDcgMTIuMzg2NSA2Ny4xODg2IDExLjg0NCA2Ni4wNTUzIDExLjg0NEM2NC42NDcxIDExLjg0NCA2My40MTA3IDEyLjQyMzQgNjIuMzY4OSAxMy41NDUzQzYxLjMyNzEgMTQuNjY3MiA2MC43ODkxIDE2LjEwOTcgNjAuNzg5MSAxNy45MzQzQzYwLjc4OTEgMTkuNzU5IDYxLjMyNzEgMjEuMjAxNCA2Mi4zNjg5IDIyLjMyMzNDNjMuNDEwNyAyMy40NDUyIDY0LjYzNTcgMjQgNjYuMDU1MyAyNEM2Ny4zNzE4IDI0IDY4LjM2NzggMjMuNDY5OSA2OS4wNDMyIDIyLjQ0NjZWMjMuNzY1N0g3Mi43Mjk2VjEyLjEzOTlINjkuMDQzMlYxMi4xMzk5Wk02OC4zNjc4IDE5LjY3MjdDNjcuNTA5MiAyMC41OTczIDY2LjEwMSAyMC41OTczIDY1LjE5NjYgMTkuNjcyN0M2NC4zMzggMTguNjk4NyA2NC4zMzggMTcuMTgyMyA2NS4xOTY2IDE2LjI1NzZDNjYuMTAxIDE1LjI4MzcgNjcuNTA5MiAxNS4yODM3IDY4LjM2NzggMTYuMjU3NkM2OS4yNzIyIDE3LjE2OTkgNjkuMjcyMiAxOC42OTg3IDY4LjM2NzggMTkuNjcyN1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik05Ny43MzEgMTIuMTM5NVY3Ljk3MjQxSDk0LjEwMTlWMTIuMTM5NUg5Mi4xMzI4VjE1LjA0OUg5NC4xMDE5VjIzLjc1M0g5Ny43MzFWMTUuMDQ5SDk5Ljk5NzhWMTIuMTM5NUg5Ny43MzFaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNODkuOTgwMyA2LjAyNDY2Qzg2Ljc0MDUgNi4wMjQ2NiA4NC43OTQzIDguMDIxOSA4NC43OTQzIDExLjcwODFWMTIuMTI3M0g4NC4yMTA0SDgyLjYwNzdIODAuNDY2OVYxMS43MDgxQzgwLjQ4OTcgMTAuNDM4MyA4MS4wNzM2IDkuNzg0ODggODEuOTY2NiA5Ljc4NDg4SDgzLjM1MThWNi4wMTIzM0g4MS45NjY2Qzc4LjcyNjcgNi4wMTIzMyA3Ni43ODA1IDguMDA5NTYgNzYuNzgwNSAxMS42OTU4VjEyLjExNUg3NC43NjU2VjE1LjAzNjlINzYuNzgwNVYyMy43NDA5SDgwLjQ2NjlWMTUuMDM2OUg4Mi42MDc3SDg0LjIxMDRIODQuNzk0M1YyMy43NDA5SDg4LjQ4MDZWMTUuMDM2OUg5MC43NDc0VjEyLjExNUg4OC40ODA2VjExLjY5NThDODguNTAzNSAxMC40MjYgODkuMDg3NCA5Ljc3MjU2IDg5Ljk4MDMgOS43NzI1Nkg5MS4xMjUySDkxLjM3N1Y2SDkxLjEyNTJIODkuOTgwM1Y2LjAyNDY2WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=="
+                    alt="logo"
+                    loading="lazy"
+                />
+            </a>
+        </div>
+        <div class="header-wrapper__header__expanded__menu__nav" aria-hidden="true">
+            <a class="header-wrapper__header__expanded__menu__nav__mobile-link" href="https://signup.trafft.com/login" target="_blank">Log in</a>
+            <img
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI4IDI4TDEyIDEyTTI4IDEyTDEyIDI4IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K"
+                alt="burger-menu"
+                loading="lazy"
+            />
+        </div>
+    </div>
+    <div class="header-wrapper__header__expanded__menu__responsive">
+        <div class="header-wrapper__header__expanded__menu__responsive__nav__links">
+            <div class="header-wrapper__header__expanded__menu__responsive__nav__links__dropdown">
+                <div aria-hidden="true" class="header-wrapper__header__expanded__menu__responsive__nav__links__dropdown__dropbtn">
+                    Features
+                    <img
+                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuMDEwMzQgMy45NTA0QzYuNzA2OCAzLjY2ODU1IDYuMjMyMjYgMy42ODYxMyA1Ljk1MDQgMy45ODk2NkM1LjY2ODU1IDQuMjkzMTkgNS42ODYxMyA0Ljc2Nzc0IDUuOTg5NjYgNS4wNDk2TDcuMDEwMzQgMy45NTA0Wk0xMCA3Ljc1TDEwLjUxMDMgOC4yOTk1OUMxMC42NjMyIDguMTU3NjkgMTAuNzUgNy45NTg1NSAxMC43NSA3Ljc1QzEwLjc1IDcuNTQxNDUgMTAuNjYzMiA3LjM0MjMxIDEwLjUxMDMgNy4yMDA0TDEwIDcuNzVaTTUuOTg5NjYgMTAuNDUwNEM1LjY4NjEzIDEwLjczMjMgNS42Njg1NSAxMS4yMDY4IDUuOTUwNCAxMS41MTAzQzYuMjMyMjYgMTEuODEzOSA2LjcwNjgxIDExLjgzMTQgNy4wMTAzNCAxMS41NDk2TDUuOTg5NjYgMTAuNDUwNFpNNS45ODk2NiA1LjA0OTZMOS40ODk2NiA4LjI5OTU5TDEwLjUxMDMgNy4yMDA0TDcuMDEwMzQgMy45NTA0TDUuOTg5NjYgNS4wNDk2Wk05LjQ4OTY2IDcuMjAwNEw1Ljk4OTY2IDEwLjQ1MDRMNy4wMTAzNCAxMS41NDk2TDEwLjUxMDMgOC4yOTk1OUw5LjQ4OTY2IDcuMjAwNFoiIGZpbGw9IiM4MDhBOUUiLz4KPC9zdmc+Cg=="
+                        alt="logo"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+            <a class="header-wrapper__header__expanded__menu__responsive__nav__links__shifted" href="/demos/">Demos</a>
+            <div class="header-wrapper__header__expanded__menu__responsive__nav__links__dropdown">
+                <div aria-hidden="true" class="header-wrapper__header__expanded__menu__responsive__nav__links__dropdown__dropbtn">
+                    Who’s it for
+                    <img
+                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuMDEwMzQgMy45NTA0QzYuNzA2OCAzLjY2ODU1IDYuMjMyMjYgMy42ODYxMyA1Ljk1MDQgMy45ODk2NkM1LjY2ODU1IDQuMjkzMTkgNS42ODYxMyA0Ljc2Nzc0IDUuOTg5NjYgNS4wNDk2TDcuMDEwMzQgMy45NTA0Wk0xMCA3Ljc1TDEwLjUxMDMgOC4yOTk1OUMxMC42NjMyIDguMTU3NjkgMTAuNzUgNy45NTg1NSAxMC43NSA3Ljc1QzEwLjc1IDcuNTQxNDUgMTAuNjYzMiA3LjM0MjMxIDEwLjUxMDMgNy4yMDA0TDEwIDcuNzVaTTUuOTg5NjYgMTAuNDUwNEM1LjY4NjEzIDEwLjczMjMgNS42Njg1NSAxMS4yMDY4IDUuOTUwNCAxMS41MTAzQzYuMjMyMjYgMTEuODEzOSA2LjcwNjgxIDExLjgzMTQgNy4wMTAzNCAxMS41NDk2TDUuOTg5NjYgMTAuNDUwNFpNNS45ODk2NiA1LjA0OTZMOS40ODk2NiA4LjI5OTU5TDEwLjUxMDMgNy4yMDA0TDcuMDEwMzQgMy45NTA0TDUuOTg5NjYgNS4wNDk2Wk05LjQ4OTY2IDcuMjAwNEw1Ljk4OTY2IDEwLjQ1MDRMNy4wMTAzNCAxMS41NDk2TDEwLjUxMDMgOC4yOTk1OUw5LjQ4OTY2IDcuMjAwNFoiIGZpbGw9IiM4MDhBOUUiLz4KPC9zdmc+Cg=="
+                        alt="logo"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+            <div class="header-wrapper__header__menu__nav__links__dropdown">
+                <div aria-hidden="true" class="header-wrapper__header__menu__nav__links__dropdown__dropbtn">
+                    Resources
+                    <img
+                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuMDEwMzQgMy45NTA0QzYuNzA2OCAzLjY2ODU1IDYuMjMyMjYgMy42ODYxMyA1Ljk1MDQgMy45ODk2NkM1LjY2ODU1IDQuMjkzMTkgNS42ODYxMyA0Ljc2Nzc0IDUuOTg5NjYgNS4wNDk2TDcuMDEwMzQgMy45NTA0Wk0xMCA3Ljc1TDEwLjUxMDMgOC4yOTk1OUMxMC42NjMyIDguMTU3NjkgMTAuNzUgNy45NTg1NSAxMC43NSA3Ljc1QzEwLjc1IDcuNTQxNDUgMTAuNjYzMiA3LjM0MjMxIDEwLjUxMDMgNy4yMDA0TDEwIDcuNzVaTTUuOTg5NjYgMTAuNDUwNEM1LjY4NjEzIDEwLjczMjMgNS42Njg1NSAxMS4yMDY4IDUuOTUwNCAxMS41MTAzQzYuMjMyMjYgMTEuODEzOSA2LjcwNjgxIDExLjgzMTQgNy4wMTAzNCAxMS41NDk2TDUuOTg5NjYgMTAuNDUwNFpNNS45ODk2NiA1LjA0OTZMOS40ODk2NiA4LjI5OTU5TDEwLjUxMDMgNy4yMDA0TDcuMDEwMzQgMy45NTA0TDUuOTg5NjYgNS4wNDk2Wk05LjQ4OTY2IDcuMjAwNEw1Ljk4OTY2IDEwLjQ1MDRMNy4wMTAzNCAxMS41NDk2TDEwLjUxMDMgOC4yOTk1OUw5LjQ4OTY2IDcuMjAwNFoiIGZpbGw9IiM4MDhBOUUiLz4KPC9zdmc+Cg=="
+                        alt="logo"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+            <div class="header-wrapper__header__menu__nav__links__dropdown">
+                <div aria-hidden="true" class="header-wrapper__header__menu__nav__links__dropdown__dropbtn">
+                    About us
+                    <img
+                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuMDEwMzQgMy45NTA0QzYuNzA2OCAzLjY2ODU1IDYuMjMyMjYgMy42ODYxMyA1Ljk1MDQgMy45ODk2NkM1LjY2ODU1IDQuMjkzMTkgNS42ODYxMyA0Ljc2Nzc0IDUuOTg5NjYgNS4wNDk2TDcuMDEwMzQgMy45NTA0Wk0xMCA3Ljc1TDEwLjUxMDMgOC4yOTk1OUMxMC42NjMyIDguMTU3NjkgMTAuNzUgNy45NTg1NSAxMC43NSA3Ljc1QzEwLjc1IDcuNTQxNDUgMTAuNjYzMiA3LjM0MjMxIDEwLjUxMDMgNy4yMDA0TDEwIDcuNzVaTTUuOTg5NjYgMTAuNDUwNEM1LjY4NjEzIDEwLjczMjMgNS42Njg1NSAxMS4yMDY4IDUuOTUwNCAxMS41MTAzQzYuMjMyMjYgMTEuODEzOSA2LjcwNjgxIDExLjgzMTQgNy4wMTAzNCAxMS41NDk2TDUuOTg5NjYgMTAuNDUwNFpNNS45ODk2NiA1LjA0OTZMOS40ODk2NiA4LjI5OTU5TDEwLjUxMDMgNy4yMDA0TDcuMDEwMzQgMy45NTA0TDUuOTg5NjYgNS4wNDk2Wk05LjQ4OTY2IDcuMjAwNEw1Ljk4OTY2IDEwLjQ1MDRMNy4wMTAzNCAxMS41NDk2TDEwLjUxMDMgOC4yOTk1OUw5LjQ4OTY2IDcuMjAwNFoiIGZpbGw9IiM4MDhBOUUiLz4KPC9zdmc+Cg=="
+                        alt="logo"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+            <a class="header-wrapper__header__expanded__menu__responsive__nav__links__shifted" href="/pricing/">Pricing </a>
+        </div>
+        <div class="header-wrapper__header__expanded__menu__responsive__nav-links-buttons">
+            <a href="https://signup.trafft.com/?type=free&amp;integrations" class="redirection-link tag-tracking-capterra" target="_blank">Sign up for free</a>
+            <a class="tag-tracking-capterra" href="/demo/"><button type="primary" label="Book a Demo" class="tw-button__primary tw-button" style="width: 100%;">Book a Demo</button></a>
+        </div>
+    </div>
+</div>
+
+								</div>
                                
                             </header>
 							<div class="hero-wrapper-agency">

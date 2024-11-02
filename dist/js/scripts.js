@@ -32,6 +32,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//Mobile nav dropdown element
+document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.querySelector(".header-wrapper__header__menu__nav__burger");
+    const mobileNav = document.querySelector(".header-wrapper__header__expanded");
+
+    burger.addEventListener("click", () => {
+        mobileNav.classList.toggle("show"); // Toggle class to show/hide
+    });
+});
+
+
+
 //Banner Closing
 
 
