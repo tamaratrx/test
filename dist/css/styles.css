@@ -508,7 +508,7 @@ section {
   font-weight: 600;
   height: 18px;
   line-height: 18px;
-  padding: 8px 15px;
+  padding: 4px 10px;
   text-align: center;
 }
 .hero-wrapper-agency__hero__section__main-text h1 {
@@ -697,16 +697,16 @@ section {
   }
 }
 
-.redirection-link {
+.btn-link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   border: 0;
   border-radius: 7px;
   color: #fff;
   cursor: pointer;
   display: flex;
-  font-family: neue-haas-grotesk;
+  font-family: "Questrial", sans-serif;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   justify-content: center;
   line-height: 120%;
   padding: 12px 24px;
@@ -715,187 +715,40 @@ section {
   white-space: nowrap;
 }
 @media (min-width: 1025px) {
-  .redirection-link {
+  .btn-link {
     width: unset;
   }
 }
-.redirection-link__ghost {
+.btn-link__ghost {
   align-items: center;
   background: transparent;
-  border: 1px solid #005aee;
-  color: #005aee;
+  border: 1px solid #14213D;
+  color: #14213D;
   height: 42px;
   line-height: 24px;
   padding: 7px 24px;
   transition: background 0.2s ease-in-out;
 }
-.redirection-link__ghost:hover {
+.btn-link__ghost:hover {
   background: #f2f6fe;
 }
-.redirection-link__outline-secondary {
-  background-color: #00092d;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  line-height: 100%;
-  padding: 15px 24px;
-  transition: background-color 0.3s ease-in-out;
+.btn-link__primary {
+  background: #14213D !important;
 }
-.redirection-link__outline-secondary:hover {
-  background-color: #2a446c;
+.btn-link__primary:hover {
+  background: #263657 !important;
 }
-.redirection-link__button-with-arrow {
-  align-items: center;
-  border: 1px solid #fff;
-  border-radius: 9px;
-  display: flex;
-  gap: 8px;
-  padding: 8px 12px;
-  transition: background-color 0.3s ease-in-out;
-}
-.redirection-link__button-with-arrow:hover {
-  background-color: #2a446c;
-}
-.redirection-link__primary {
-  background: #0056e5 !important;
-}
-.redirection-link__primary:hover {
-  background: #2878fc !important;
-}
-.redirection-link__floating {
-  align-items: center;
-  background: #f9e215;
-  border-radius: 6px;
-  color: #000d27;
-  font-weight: 600;
-  gap: 10px;
-  height: 40px;
-  justify-content: center;
-  padding: 18px 24px;
-  width: 124px;
-}
-@media (min-width: 769px) {
-  .redirection-link__floating {
-    border-radius: 16px;
-    height: unset;
-    width: 200px;
-  }
-}
-.redirection-link__floating:hover {
-  background: #fae848;
-  transition: 0.3s;
-}
-.redirection-link__demos {
-  align-items: center;
-  background: #f9e215;
-  border-radius: 8px;
-  color: #00143c;
-  display: flex;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  gap: 12px;
-  justify-content: center;
-  line-height: 32px;
-  padding: 8px 32px;
-  text-decoration: none;
-}
-@media (min-width: 1025px) {
-  .redirection-link__demos {
-    width: 100%;
-  }
-}
-.redirection-link__demos:hover {
-  background: #fae848;
-  transition: 0.3s;
-}
-.redirection-link__green {
-  background: #0da430 !important;
-}
-.redirection-link__green:hover {
-  background: #09752f !important;
-}
-@media (min-width: 769px) {
-  .redirection-link__green {
-    width: 270px;
-  }
-}
-.redirection-link__green-light {
+.btn-link__green-light {
   background: #4BE2A6 !important;
 }
-.redirection-link__green-light:hover {
+.btn-link__green-light:hover {
   background: #4eabab !important;
 }
-.redirection-link__orange {
+.btn-link__orange {
   background: #f47d01 !important;
 }
-.redirection-link__orange:hover {
+.btn-link__orange:hover {
   background: #ee9335 !important;
-}
-.redirection-link__red {
-  background: #c8182f !important;
-}
-.redirection-link__red:hover {
-  background: #cc4456 !important;
-}
-.redirection-link__yellow {
-  background: #e3ff18 !important;
-  color: #000 !important;
-}
-.redirection-link__yellow:hover {
-  background: #bad014 !important;
-}
-.redirection-link__primary-green {
-  background: #48be9f !important;
-}
-.redirection-link__primary-green:hover {
-  background: #1fa982 !important;
-}
-.redirection-link__purple {
-  background: #824fff !important;
-}
-.redirection-link__purple:hover {
-  background: #7049d5 !important;
-}
-.redirection-link__sky-blue {
-  background: #0ac0e3 !important;
-}
-.redirection-link__sky-blue:hover {
-  background: #1aa2c0 !important;
-}
-.redirection-link__dark-blue {
-  background: #1353a4 !important;
-}
-.redirection-link__dark-blue:hover {
-  background: #315ea6 !important;
-}
-.redirection-link__pink {
-  background: #bf357c !important;
-}
-.redirection-link__pink:hover {
-  background: #bd4b80 !important;
-}
-.redirection-link__light-blue {
-  background: #578cf4 !important;
-}
-.redirection-link__light-blue:hover {
-  background: #3b78ea !important;
-}
-.redirection-link__light {
-  background: #f2f6fe !important;
-  color: #005aee !important;
-}
-.redirection-link__brown {
-  background: #977656;
-  color: #fff;
-}
-.redirection-link__gray-light {
-  background: #fff;
-  border: 1px solid #d0d5dd;
-  color: #344054;
-  transition: 0.2s ease-in-out;
-}
-.redirection-link__gray-light:hover {
-  background: #f6f2f2;
 }
 
 .hero-wrapper-agency__hero__section__buttons-and-description {
@@ -1006,7 +859,7 @@ section {
   }
 }
 
-.rating-inner__customer-card {
+.rating-inner__agencies {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -1016,19 +869,19 @@ section {
   width: 100%;
 }
 @media (min-width: 1025px) {
-  .rating-inner__customer-card {
+  .rating-inner__agencies {
     gap: 10px;
     max-width: 380px;
     padding: 20.5px;
   }
 }
 @media (min-width: 1118px) {
-  .rating-inner__customer-card {
+  .rating-inner__agencies {
     gap: 20px;
   }
 }
 
-.rating-inner__customer-card__text {
+.rating-inner__agencies__text {
   align-items: center;
   color: #000;
   display: flex;
@@ -1037,60 +890,50 @@ section {
   justify-content: space-between;
 }
 @media (min-width: 769px) {
-  .rating-inner__customer-card__text {
+  .rating-inner__agencies__text {
     gap: 8px;
   }
 }
 @media (min-width: 1025px) {
-  .rating-inner__customer-card__text {
+  .rating-inner__agencies__text {
     gap: 5px;
   }
 }
 
-.rating-inner__customer-card__text__number_white,
-.rating-inner__customer-card__text__number_black {
+.rating-inner__agencies__text__number_black {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.01em;
   line-height: 32px;
   text-align: center;
 }
 
-.rating-inner__customer-card__text__number_white {
-  color: #fff;
-}
-
-.rating-inner__customer-card__text__number_black {
+.rating-inner__agencies__text__number_black {
   color: #000;
 }
 
-.rating-inner__customer-card__text__description_white,
-.rating-inner__customer-card__text__description_black {
-  font-size: 15px;
+.rating-inner__agencies__text__description_black {
+  font-size: 17px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 22px;
   opacity: 0.6;
+  letter-spacing: 0.02em;
   text-align: center;
   text-transform: uppercase;
 }
 @media (min-width: 1025px) {
-  .rating-inner__customer-card__text__description_white,
-  .rating-inner__customer-card__text__description_black {
+  .rating-inner__agencies__text__description_black {
     font-size: 17px;
     letter-spacing: 0.02em;
     line-height: 130%;
   }
 }
 
-.rating-inner__customer-card__text__description_white {
-  color: #fff;
-}
-
-.rating-inner__customer-card__text__description_black {
+.rating-inner__agencies__text__description_black {
   color: #000;
 }
 
-.rating-inner__rating-cards {
+.rating-inner__rating-logos {
   align-items: center;
   background: hsla(0, 0%, 100%, 0.05);
   border-top: 1px solid #868e96;
@@ -1103,18 +946,18 @@ section {
   width: 100%;
 }
 @media (min-width: 768px) and (max-width: 837px) {
-  .rating-inner__rating-cards {
+  .rating-inner__rating-logos {
     gap: 6px !important;
   }
 }
 @media (min-width: 769px) {
-  .rating-inner__rating-cards {
+  .rating-inner__rating-logos {
     height: 90px;
     padding: 20px;
   }
 }
 @media (min-width: 1025px) {
-  .rating-inner__rating-cards {
+  .rating-inner__rating-logos {
     border-top: none;
     flex-wrap: nowrap;
     gap: 14px;
@@ -1123,7 +966,7 @@ section {
   }
 }
 
-.rating-inner__rating-cards__card {
+.rating-inner__rating-logos__logo {
   max-height: 100%;
   max-width: 156px;
 }

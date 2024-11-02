@@ -74,7 +74,7 @@
                     font-weight: 600;
                     height: 18px;
                     line-height: 18px;
-                    padding: 8px 15px;
+                    padding: 4px 10px;
                     text-align: center;
                 }
 
@@ -263,16 +263,16 @@
         }
     }
 }
-.redirection-link {
+.btn-link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   border: 0;
   border-radius: 7px;
   color: #fff;
   cursor: pointer;
   display: flex;
-  font-family: neue-haas-grotesk;
+  font-family: $font-family-base;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   justify-content: center;
   line-height: 120%;
   padding: 12px 24px;
@@ -288,8 +288,8 @@
   &__ghost {
     align-items: center;
     background: transparent;
-    border: 1px solid #005aee;
-    color: #005aee;
+    border: 1px solid #14213D;
+    color: #14213D;
     height: 42px;
     line-height: 24px;
     padding: 7px 24px;
@@ -300,99 +300,12 @@
     }
   }
 
-  &__outline-secondary {
-    background-color: #00092d;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    line-height: 100%;
-    padding: 15px 24px;
-    transition: background-color 0.3s ease-in-out;
-
-    &:hover {
-      background-color: #2a446c;
-    }
-  }
-
-  &__button-with-arrow {
-    align-items: center;
-    border: 1px solid #fff;
-    border-radius: 9px;
-    display: flex;
-    gap: 8px;
-    padding: 8px 12px;
-    transition: background-color 0.3s ease-in-out;
-
-    &:hover {
-      background-color: #2a446c;
-    }
-  }
 
   &__primary {
-    background: #0056e5 !important;
+    background: #14213D !important;
 
     &:hover {
-      background: #2878fc !important;
-    }
-  }
-
-  &__floating {
-    align-items: center;
-    background: #f9e215;
-    border-radius: 6px;
-    color: #000d27;
-    font-weight: 600;
-    gap: 10px;
-    height: 40px;
-    justify-content: center;
-    padding: 18px 24px;
-    width: 124px;
-
-    @media (min-width: 769px) {
-      border-radius: 16px;
-      height: unset;
-      width: 200px;
-    }
-
-    &:hover {
-      background: #fae848;
-      transition: 0.3s;
-    }
-  }
-
-  &__demos {
-    align-items: center;
-    background: #f9e215;
-    border-radius: 8px;
-    color: #00143c;
-    display: flex;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    gap: 12px;
-    justify-content: center;
-    line-height: 32px;
-    padding: 8px 32px;
-    text-decoration: none;
-
-    @media (min-width: 1025px) {
-      width: 100%;
-    }
-
-    &:hover {
-      background: #fae848;
-      transition: 0.3s;
-    }
-  }
-
-  &__green {
-    background: #0da430 !important;
-
-    &:hover {
-      background: #09752f !important;
-    }
-
-    @media (min-width: 769px) {
-      width: 270px;
+      background: #263657 !important;
     }
   }
 
@@ -409,92 +322,6 @@
 
     &:hover {
       background: #ee9335 !important;
-    }
-  }
-
-  &__red {
-    background: #c8182f !important;
-
-    &:hover {
-      background: #cc4456 !important;
-    }
-  }
-
-  &__yellow {
-    background: #e3ff18 !important;
-    color: #000 !important;
-
-    &:hover {
-      background: #bad014 !important;
-    }
-  }
-
-  &__primary-green {
-    background: #48be9f !important;
-
-    &:hover {
-      background: #1fa982 !important;
-    }
-  }
-
-  &__purple {
-    background: #824fff !important;
-
-    &:hover {
-      background: #7049d5 !important;
-    }
-  }
-
-  &__sky-blue {
-    background: #0ac0e3 !important;
-
-    &:hover {
-      background: #1aa2c0 !important;
-    }
-  }
-
-  &__dark-blue {
-    background: #1353a4 !important;
-
-    &:hover {
-      background: #315ea6 !important;
-    }
-  }
-
-  &__pink {
-    background: #bf357c !important;
-
-    &:hover {
-      background: #bd4b80 !important;
-    }
-  }
-
-  &__light-blue {
-    background: #578cf4 !important;
-
-    &:hover {
-      background: #3b78ea !important;
-    }
-  }
-
-  &__light {
-    background: #f2f6fe !important;
-    color: #005aee !important;
-  }
-
-  &__brown {
-    background: #977656;
-    color: #fff;
-  }
-
-  &__gray-light {
-    background: #fff;
-    border: 1px solid #d0d5dd;
-    color: #344054;
-    transition: 0.2s ease-in-out;
-
-    &:hover {
-      background: #f6f2f2;
     }
   }
 }
