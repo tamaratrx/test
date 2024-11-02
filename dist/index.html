@@ -8,11 +8,10 @@
         <title>Junior Web Developer Test</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
-        <!-- Core CSS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Questrial&display=swap" rel="stylesheet">
+<!-- Core CSS -->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
@@ -20,9 +19,10 @@
     <div class="banner-content">
         <div class="banner-text">
             <p>Black Friday</p>
-			 <p>Cyber Monday</p>
+			 <p><span>Cyber Monday</span></p>
         </div>
         <div class="banner-countdown">
+	 <h2 class="countdown-title">SALE UP TO 60% OFF</h2> 
             <div id="countdown" class="countdown-timer">
                 <span class="countdown-item">
                     <span class="countdown-number" id="days">00</span>
@@ -43,9 +43,9 @@
             </div>
         </div>
         <div class="banner-button">
-            <a href="shop.html" class="button shop-now-button">Shop Now</a>
+            <a href="shop.html" class="redirection-link__green-light button shop-now-button">Shop Now</a>
         </div>
-        <div class="banner-close-button">
+        <div class="banner-button">
             <a href="index.html" class="close-button">
                 <img
                     src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEzLjQwOTkgMTJMMTcuNzA5OSA3LjcxQzE3Ljg5ODIgNy41MjE2OSAxOC4wMDQgNy4yNjYzIDE4LjAwNCA3QzE4LjAwNCA2LjczMzcgMTcuODk4MiA2LjQ3ODMgMTcuNzA5OSA2LjI5QzE3LjUyMTYgNi4xMDE2OSAxNy4yNjYyIDUuOTk1OTEgMTYuOTk5OSA1Ljk5NTkxQzE2LjczMzYgNS45OTU5MSAxNi40NzgyIDYuMTAxNjkgMTYuMjg5OSA2LjI5TDExLjk5OTkgMTAuNTlMNy43MDk5NCA2LjI5QzcuNTIxNjQgNi4xMDE2OSA3LjI2NjI0IDUuOTk1OTEgNi45OTk5NCA1Ljk5NTkxQzYuNzMzNjQgNS45OTU5MSA2LjQ3ODI0IDYuMTAxNjkgNi4yODk5NCA2LjI5QzYuMTAxNjQgNi40NzgzIDUuOTk1ODUgNi43MzM3IDUuOTk1ODUgN0M1Ljk5NTg1IDcuMjY2MyA2LjEwMTY0IDcuNTIxNjkgNi4yODk5NCA3LjcxTDEwLjU4OTkgMTJMNi4yODk5NCAxNi4yOUM2LjE5NjIxIDE2LjM4MyA2LjEyMTgyIDE2LjQ5MzYgNi4wNzEwNSAxNi42MTU0QzYuMDIwMjggMTYuNzM3MyA1Ljk5NDE0IDE2Ljg2OCA1Ljk5NDE0IDE3QzUuOTk0MTQgMTcuMTMyIDYuMDIwMjggMTcuMjYyNyA2LjA3MTA1IDE3LjM4NDZDNi4xMjE4MiAxNy41MDY0IDYuMTk2MjEgMTcuNjE3IDYuMjg5OTQgMTcuNzFDNi4zODI5IDE3LjgwMzcgNi40OTM1IDE3Ljg3ODEgNi42MTUzNiAxNy45Mjg5QzYuNzM3MjIgMTcuOTc5NyA2Ljg2NzkzIDE4LjAwNTggNi45OTk5NCAxOC4wMDU4QzcuMTMxOTUgMTguMDA1OCA3LjI2MjY2IDE3Ljk3OTcgNy4zODQ1MiAxNy45Mjg5QzcuNTA2MzggMTcuODc4MSA3LjYxNjk4IDE3LjgwMzcgNy43MDk5NCAxNy43MUwxMS45OTk5IDEzLjQxTDE2LjI4OTkgMTcuNzFDMTYuMzgyOSAxNy44MDM3IDE2LjQ5MzUgMTcuODc4MSAxNi42MTU0IDE3LjkyODlDMTYuNzM3MiAxNy45Nzk3IDE2Ljg2NzkgMTguMDA1OCAxNi45OTk5IDE4LjAwMThDMTcuMTMyIDE4LjAwNTggMTcuMjYyNyAxNy45Nzk3IDE3LjM4NDUgMTcuOTI4OUMxNy41MDY0IDE3Ljg3ODEgMTcuNjE3IDE3LjgwMzcgMTcuNzA5OSAxNy43MUMxNy44MDM3IDE3LjYxNyAxNy44NzgxIDE3LjUwNjQgMTcuOTI4OCAxNy4zODQ2QzE3Ljk3OTYgMTcuMjYyNyAxOC4wMDU3IDE3LjEzMiAxOC4wMDU3IDE3QzE4LjAwNTcgMTYuODY4IDE3Ljk3OTYgMTYuNzM3MyAxNy45Mjg4IDE2LjYxNTRDMTcuODc4MSAxNi40OTM2IDE3LjgwMzcgMTYuMzgzIDE3LjcwOTkgMTYuMjlMMTMuNDA5OSAxMloiIGZpbGw9IiMwMDE0M0MiLz4KPC9zdmc+Cg=="
@@ -119,9 +119,9 @@
                                                 </div>
                                             </div>
                                             <div class="header-wrapper__header__menu__nav-buttons">
-                                               <a id="demo-header" class="header-wrapper__header__menu__nav-buttons__book-a-demo tag-tracking-capterra" aria-label="Schedule a demo" href="demo/index.html">
-                                                    <button id="demo-header-button" type="primary" style="width: 100%;" label="Book a Demo" class="tw-button__primary tw-button">Book a Demo</button>
-                                                </a>
+
+                                                    <button id="demo-header-button" type="primary" href="demo/index.html" style="width: 100%;" label="Book a Demo"   class="redirection-link redirection-link__orange">Book a Demo</button>
+                                         
                                                 <div class="header-wrapper__header__menu__nav__burger" aria-hidden="true">
                                                     <img
                                                         src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDEwLjVDNyA5LjY3MTU3IDcuNjcxNTcgOSA4LjUgOUgzMS41QzMyLjMyODQgOSAzMyA5LjY3MTU3IDMzIDEwLjVDMzMgMTEuMzI4NCAzMi4zMjg0IDEyIDMxLjUgMTJIOC41QzcuNjcxNTcgMTIgNyAxMS4zMjg0IDcgMTAuNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNyAxOS41QzcgMTguNjcxNiA3LjY3MTU3IDE4IDguNSAxOEgzMS41QzMyLjMyODQgMTggMzMgMTguNjcxNiAzMyAxOS41QzMzIDIwLjMyODQgMzIuMzI4NCAyMSAzMS41IDIxSDguNUM3LjY3MTU3IDIxIDcgMjAuMzI4NCA3IDE5LjVaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTcgMjguNUM3IDI3LjY3MTYgNy42NzE1NyAyNyA4LjUgMjdIMzEuNUMzMi4zMjg0IDI3IDMzIDI3LjY3MTYgMzMgMjguNUMzMyAyOS4zMjg0IDMyLjMyODQgMzAgMzEuNSAzMEg4LjVDNy42NzE1NyAzMCA3IDI5LjMyODQgNyAyOC41WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=="

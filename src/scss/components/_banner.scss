@@ -1,117 +1,106 @@
-// 
-// Banner
-// 
-
 .banner {
+  // Background and padding
   background: url('../assets/img/banner-background.png') no-repeat;
   background-color: $black;
   background-position: 50%;
   background-size: cover;
-  padding: 13px 16px;
-
-  @media (min-width: 769px) {
-    background: url('../assets/img/banner-background.png') no-repeat;
-	  background-color: $black;
-    background-position: 50%;
-    background-size: cover;
-  }
-
-  @media (min-width: 1025px) {
-    background: url('../assets/img/banner-background.png') no-repeat;
-	  background-color: $black;
-    background-position: 50%;
-    background-size: cover;
-  }
-
-  @media (min-width: 1248px) {
-    padding: 13px 0;
-  }
-
-  background-color: #000; // Set a fallback background color
-  padding: 20px; 
+  padding: 20px;
 
   .banner-content {
-    max-width: 1200px; 
+    max-width: 1200px;
     width: 100%;
-    margin: 0 auto; // Center within banner
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 
     .banner-text {
-      flex: 1; 
+      flex: 1;
       text-align: left;
-      padding: 10px; 
+	  font-size: 24px;
+	 
+      padding: 10px;
 
       p {
-        margin: 0; 
+        color: $white;
+		 margin: 0px;
+      }
+
+      p span {
+        color: $banner-green;
       }
     }
 
     .banner-countdown {
-      flex: 1; 
-      display: flex; 
-      justify-content: center; 
-      align-items: center; 
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center; // Center the countdown section
+      text-align: center;
+
+      .countdown-title {
+        font-size: 12px;
+		padding: 4px 8px;
+        color: $banner-black;
+		background: $white;
+        margin-bottom: 10px;
+      }
 
       .countdown-timer {
-        display: flex; 
-        gap: 10px; 
+        display: flex;
+        gap: 10px;
 
         .countdown-item {
-          display: flex; 
-          flex-direction: column; 
-          align-items: center; 
+          display: flex;
+          flex-direction: column;
+          align-items: center;
 
           .countdown-number {
-            font-size: 2em; 
-           
+            font-size: 24px;
+            color: $banner-green;
           }
 
           .countdown-label {
-            font-size: 0.8em; 
-            color: #333; 
+            font-size: 10px;
+            color: $white;
           }
         }
       }
     }
 
     .banner-button {
-      flex: 1; 
-      display: flex; 
-      justify-content: space-evenly;
-      padding: 10px; 
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px;
 
-      // Shop Now button styles
       .shop-now-button {
-        width: 147px; 
-        height: 35px; 
-        padding: 8px 16px; 
-        margin-right: 5px; 
-        color: #222; 
-        background-color: 4BE2A6; 
+        padding: 8px 16px;
+        margin-right: 5px;
+        color: #222;
+        background: #4BE2A6;
         border: 2px solid #4BE2A6;
-        border-radius: 5px; 
-        cursor: pointer; 
-        text-decoration: none; 
-        transition: background-color 0.3s ease; 
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
 
-        // Hover effect
         &:hover {
-          background-color: rgba(75, 226, 166, 0.1); 
+          background-color: rgba(75, 226, 166, 0.1);
         }
       }
 
-      // Close button styles
       .close-button {
-        background-color: transparent;
-        border: none; 
-        cursor: pointer; 
+        background-color: $white;
+        border: none;
+        border-radius: 100px;
+        padding: 2px 2px 0 2px;
+        cursor: pointer;
 
         img {
-          width: 24px; 
-          height: auto; 
+          width: 20px;
+          height: auto;
         }
       }
     }
