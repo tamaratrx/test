@@ -1,9 +1,9 @@
 .banner {
-  // Background and padding
-  background: url('../assets/img/banner-background.png') no-repeat;
-  background-color: $black;
-  background-position: 50%;
-  background-size: cover;
+   background: 
+    url('../assets/img/banner-bg-left.png') no-repeat center left / contain,
+    url('../assets/img/banner-bg-right.png') no-repeat center right / contain,
+    $black; 
+  
   padding: 20px;
 
   .banner-content {
