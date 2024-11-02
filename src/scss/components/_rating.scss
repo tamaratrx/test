@@ -1,7 +1,9 @@
 // 
 // Rating
 // 
+
 // Rating Section Styles
+
 .rating-wrapper {
     background-color: $grey-bg-color;
 
@@ -53,5 +55,25 @@
                 padding: 24px;
             }
         }
+    }
+}
+.ratings-module {
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    padding: 16px 18px 16px 16px;
+    transition: 0.3s;
+
+    // Media query for mobile and tablet screens
+    @media (max-width: 768px) {
+        display: flex; // Ensures the module is displayed
+        width: auto; // Adjust as needed
+    }
+
+    // Media query for larger screens
+    @media (max-width: 1250px) {
+        width: 328px;
     }
 }

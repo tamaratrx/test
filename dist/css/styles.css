@@ -28,7 +28,15 @@ section {
 
 .banner {
   background: url("../assets/img/banner-bg-left.png") no-repeat center left/contain, url("../assets/img/banner-bg-right.png") no-repeat center right/contain, #000;
-  padding: 20px;
+  padding: 20px 0;
+}
+@media (max-width: 768px) {
+  .banner {
+    background: url("../assets/img/banner-mobile-bg-left.png") no-repeat top left/50%, url("../assets/img/banner-mobile-bg-right.png") no-repeat bottom right/50%, #000;
+  }
+  .banner .banner-countdown {
+    display: none !important;
+  }
 }
 .banner .banner-content {
   max-width: 1200px;
@@ -47,7 +55,7 @@ section {
 }
 .banner .banner-content .banner-text p {
   color: #fff;
-  margin: 0px;
+  margin: 0;
   font-family: "Alfa Slab One", serif;
   letter-spacing: 0.2em;
 }
@@ -96,7 +104,7 @@ section {
 }
 .banner .banner-content .banner-button .shop-now-button {
   padding: 8px 16px;
-  margin-right: 5px;
+  margin: 10px 5px 0 0;
   color: #222;
   letter-spacing: 0.2em;
   font-weight: 700;
@@ -110,6 +118,9 @@ section {
   background-color: rgba(75, 226, 166, 0.1);
 }
 .banner .banner-content .banner-button .close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   background-color: #fff;
   border: none;
   border-radius: 100px;
@@ -119,6 +130,23 @@ section {
 .banner .banner-content .banner-button .close-button img {
   width: 20px;
   height: auto;
+}
+@media (max-width: 768px) {
+  .banner .banner-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .banner .banner-content .banner-text {
+    order: 1;
+  }
+  .banner .banner-content .banner-button {
+    order: 2;
+    justify-content: flex-start;
+  }
+  .banner .banner-countdown,
+  .banner .countdown-title {
+    display: none;
+  }
 }
 
 .header-wrapper {
@@ -1361,5 +1389,26 @@ section {
     gap: 14px;
     height: 100px;
     padding: 24px;
+  }
+}
+
+.ratings-module {
+  align-items: center;
+  background: #f8f9fa;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  padding: 16px 18px 16px 16px;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .ratings-module {
+    display: flex;
+    width: auto;
+  }
+}
+@media (max-width: 1250px) {
+  .ratings-module {
+    width: 328px;
   }
 }

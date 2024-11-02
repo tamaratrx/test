@@ -1,116 +1,161 @@
+// 
+// Banner 
+// 
+
+// Beader Section Styles
+
+
 .banner {
-   background: 
-    url('../assets/img/banner-bg-left.png') no-repeat center left / contain,
-    url('../assets/img/banner-bg-right.png') no-repeat center right / contain,
-    $black; 
-  
-  padding: 20px;
+    background: 
+        url('../assets/img/banner-bg-left.png') no-repeat center left / contain,
+        url('../assets/img/banner-bg-right.png') no-repeat center right / contain,
+        $black; 
+    padding: 20px 0;
 
-  .banner-content {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    
+    @media (max-width: 768px) { 
+        background: 
+            url('../assets/img/banner-mobile-bg-left.png') no-repeat top left / 50%,
+            url('../assets/img/banner-mobile-bg-right.png') no-repeat bottom right / 50%,
+            $black; 
 
-    .banner-text {
-      flex: 1;
-      text-align: left;
-	  font-size: 24px;
-	 
-      padding: 10px;
-
-      p {
-        color: $white;
-		 margin: 0px;
-		 font-family: $banner-headings-font-family;
-		 letter-spacing: 0.2em;
-      }
-
-      p span {
-        color: $banner-green;
-      }
+        .banner-countdown {
+            display: none !important; 
+        }
     }
 
-    .banner-countdown {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center; // Center the countdown section
-      text-align: center;
-
-      .countdown-title {
-        font-size: 12px;
-		padding: 4px 8px;
-        color: $banner-black;
-		background: $white;
-        margin-bottom: 10px;
-		letter-spacing: 0.3em;
-      }
-
-      .countdown-timer {
+    .banner-content {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
         display: flex;
-        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
 
-        .countdown-item {
-          display: flex;
-          flex-direction: column;
-		  gap: 4px;
-		  font-family: $banner-headings-font-family;
-          align-items: center;
-
-          .countdown-number {
+        // Banner Text
+        .banner-text {
+            flex: 1;
+            text-align: left;
             font-size: 24px;
-            color: $banner-green;
-          }
+            padding: 10px;
 
-          .countdown-label {
-            font-size: 10px;
-            color: $white;
-          }
+            p {
+                color: $white;
+                margin: 0;
+                font-family: $banner-headings-font-family;
+                letter-spacing: 0.2em;
+
+                span {
+                    color: $banner-green;
+                }
+            }
         }
-      }
+
+        // Countdown Section
+        .banner-countdown {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .countdown-title {
+                font-size: 12px;
+                padding: 4px 8px;
+                color: $banner-black;
+                background: $white;
+                margin-bottom: 10px;
+                letter-spacing: 0.3em;
+            }
+
+            .countdown-timer {
+                display: flex;
+                gap: 10px;
+
+                .countdown-item {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    font-family: $banner-headings-font-family;
+                    align-items: center;
+
+                    .countdown-number {
+                        font-size: 24px;
+                        color: $banner-green;
+                    }
+
+                    .countdown-label {
+                        font-size: 10px;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        // Buttons Section
+        .banner-button {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+
+            .shop-now-button {
+                padding: 8px 16px;
+                margin: 10px 5px 0 0; // Margin for spacing
+                color: $banner-btn-text-color;
+                letter-spacing: 0.2em;
+                font-weight: 700;
+                font-family: $banner-btn-font-family;
+                font-size: 16px;
+                cursor: pointer;
+                text-decoration: none;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: rgba(75, 226, 166, 0.1);
+                }
+            }
+
+            .close-button {
+                position: absolute; 
+                top: 20px; 
+                right: 20px; 
+                background-color: $white;
+                border: none;
+                border-radius: 100px;
+                padding: 2px 2px 0 2px;
+                cursor: pointer;
+
+                img {
+                    width: 20px;
+                    height: auto;
+                }
+            }
+        }
     }
 
-    .banner-button {
-      flex: 1;
-      display: flex;
-      justify-content: flex-end;
-      padding: 10px;
+    // Mobile Styles
+    @media (max-width: 768px) { 
+        .banner-content {
+            flex-direction: column; 
+            align-items: flex-start; 
 
-      .shop-now-button {
-        padding: 8px 16px;
-        margin-right: 5px;
-        color: $banner-btn-text-color;
-		letter-spacing: 0.2em;
-		font-weight: 700;
-        
-       
-        font-family: $banner-btn-font-family;
-		font-size: 16px;
-        cursor: pointer;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
+            .banner-text {
+                order: 1; 
+               
+            }
 
-        &:hover {
-          background-color: rgba(75, 226, 166, 0.1);
+            .banner-button {
+                order: 2; 
+                justify-content: flex-start; 
+                
+            }
         }
-      }
 
-      .close-button {
-        background-color: $white;
-        border: none;
-        border-radius: 100px;
-        padding: 2px 2px 0 2px;
-        cursor: pointer;
-
-        img {
-          width: 20px;
-          height: auto;
+        .banner-countdown,
+        .countdown-title {
+            display: none; 
         }
-      }
     }
-  }
 }
