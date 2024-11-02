@@ -25,6 +25,8 @@
       p {
         color: $white;
 		 margin: 0px;
+		 font-family: $banner-headings-font-family;
+		 letter-spacing: 0.2em;
       }
 
       p span {
@@ -45,6 +47,7 @@
         color: $banner-black;
 		background: $white;
         margin-bottom: 10px;
+		letter-spacing: 0.3em;
       }
 
       .countdown-timer {
@@ -54,6 +57,8 @@
         .countdown-item {
           display: flex;
           flex-direction: column;
+		  gap: 4px;
+		  font-family: $banner-headings-font-family;
           align-items: center;
 
           .countdown-number {
@@ -78,10 +83,13 @@
       .shop-now-button {
         padding: 8px 16px;
         margin-right: 5px;
-        color: #222;
-        background: #4BE2A6;
-        border: 2px solid #4BE2A6;
-        border-radius: 5px;
+        color: $banner-btn-text-color;
+		letter-spacing: 0.2em;
+		font-weight: 700;
+        
+       
+        font-family: $banner-btn-font-family;
+		font-size: 16px;
         cursor: pointer;
         text-decoration: none;
         transition: background-color 0.3s ease;

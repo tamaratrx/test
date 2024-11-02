@@ -67,27 +67,27 @@
                 }
 
                 &__pill {
-                    background: #e6effe;
+                    background: $grey-bg-color;
                     border-radius: 16px;
-                    color: #064ec6;
+                    color: $black;
                     font-size: 15px;
-                    font-weight: 500;
-                    height: 26px;
+                    font-weight: 600;
+                    height: 18px;
                     line-height: 18px;
-                    padding: 4px 10px;
+                    padding: 8px 15px;
                     text-align: center;
                 }
 
                 h1 {
-                    color: #000d27;
-                    font-size: 24px;
+                    color: #14213D;
+                    font-size: 47px;
                     font-style: normal;
                     font-weight: 600;
                     letter-spacing: 0.02em;
-                    line-height: 120%;
+                    margin: 0px;
 
                     span {
-                        color: #0056e5;
+                        color: #FCA311;
                     }
 
                     @media (max-width: 1025px) and (min-width: 769px) {
@@ -96,16 +96,16 @@
 
                     @media (min-width: 1025px) {
                         font-size: 47px;
-                        font-weight: 500;
+                        font-weight: 600;
                         letter-spacing: 0.01em;
-                        line-height: 115%;
+                         margin: 0px;
                     }
                 }
 
                 &__description {
-                    color: #334363 !important;
-                    font-size: 16px;
-                    font-weight: 400;
+                    color: #14213D!important;
+                    font-size: 20px;
+                    font-weight: 500;
                     letter-spacing: 0.02em;
                     line-height: 140%;
 

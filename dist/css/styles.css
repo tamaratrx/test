@@ -3,6 +3,14 @@
 * Copyright 2013-2024 T
 * Licensed under MIT (https://github.com/StartBootstrap/Web Developer Test/blob/master/LICENSE)
 */
+body {
+  font-family: "Questrial", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Questrial", sans-serif;
+}
+
 html {
   scroll-padding-top: 4.5rem;
 }
@@ -10,10 +18,6 @@ html {
 body {
   display: block;
   margin: 0px;
-}
-
-.font-alt {
-  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
 
 aside,
@@ -106,6 +110,8 @@ section {
 .banner .banner-content .banner-text p {
   color: #fff;
   margin: 0px;
+  font-family: "Alfa Slab One", serif;
+  letter-spacing: 0.2em;
 }
 .banner .banner-content .banner-text p span {
   color: #4BE2A6;
@@ -123,6 +129,7 @@ section {
   color: #191919;
   background: #fff;
   margin-bottom: 10px;
+  letter-spacing: 0.3em;
 }
 .banner .banner-content .banner-countdown .countdown-timer {
   display: flex;
@@ -131,6 +138,8 @@ section {
 .banner .banner-content .banner-countdown .countdown-timer .countdown-item {
   display: flex;
   flex-direction: column;
+  gap: 4px;
+  font-family: "Alfa Slab One", serif;
   align-items: center;
 }
 .banner .banner-content .banner-countdown .countdown-timer .countdown-item .countdown-number {
@@ -151,9 +160,10 @@ section {
   padding: 8px 16px;
   margin-right: 5px;
   color: #222;
-  background: #4BE2A6;
-  border: 2px solid #4BE2A6;
-  border-radius: 5px;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  font-family: "Aleo", serif;
+  font-size: 16px;
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.3s ease;
@@ -491,26 +501,26 @@ section {
   }
 }
 .hero-wrapper-agency__hero__section__main-text__pill {
-  background: #e6effe;
+  background: #E5E5E5;
   border-radius: 16px;
-  color: #064ec6;
+  color: #000;
   font-size: 15px;
-  font-weight: 500;
-  height: 26px;
+  font-weight: 600;
+  height: 18px;
   line-height: 18px;
-  padding: 4px 10px;
+  padding: 8px 15px;
   text-align: center;
 }
 .hero-wrapper-agency__hero__section__main-text h1 {
-  color: #000d27;
-  font-size: 24px;
+  color: #14213D;
+  font-size: 47px;
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0.02em;
-  line-height: 120%;
+  margin: 0px;
 }
 .hero-wrapper-agency__hero__section__main-text h1 span {
-  color: #0056e5;
+  color: #FCA311;
 }
 @media (max-width: 1025px) and (min-width: 769px) {
   .hero-wrapper-agency__hero__section__main-text h1 {
@@ -520,15 +530,15 @@ section {
 @media (min-width: 1025px) {
   .hero-wrapper-agency__hero__section__main-text h1 {
     font-size: 47px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.01em;
-    line-height: 115%;
+    margin: 0px;
   }
 }
 .hero-wrapper-agency__hero__section__main-text__description {
-  color: #334363 !important;
-  font-size: 16px;
-  font-weight: 400;
+  color: #14213D !important;
+  font-size: 20px;
+  font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 140%;
 }
