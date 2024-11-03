@@ -644,11 +644,11 @@ section {
   height: 29px;
   width: 144px;
 }
-.header-wrapper__header__expanded__menu__responsive__nav__links__shifted {
+.header-wrapper__header__expanded__menu__responsive__nav__links__boxed {
   padding-left: 4px;
 }
 @media (min-width: 1025px) {
-  .header-wrapper__header__expanded__menu__responsive__nav__links__shifted {
+  .header-wrapper__header__expanded__menu__responsive__nav__links__boxed {
     padding-left: 0;
   }
 }
@@ -1152,24 +1152,6 @@ section {
 @media (min-width: 769px) {
   .hero-wrapper__hero__section__buttons-and-description__buttons {
     flex-direction: row;
-  }
-}
-.hero-wrapper__hero__section__buttons-and-description__buttons_agency {
-  flex-direction: column;
-}
-@media (min-width: 769px) {
-  .hero-wrapper__hero__section__buttons-and-description__buttons_agency {
-    flex-direction: row;
-  }
-}
-@media (max-width: 1025px) and (min-width: 769px) {
-  .hero-wrapper__hero__section__buttons-and-description__buttons_agency {
-    flex-direction: column;
-  }
-}
-@media (min-width: 1025px) {
-  .hero-wrapper__hero__section__buttons-and-description__buttons_agency__book-a-demo {
-    max-width: 240px;
   }
 }
 .hero-wrapper__hero__section__buttons-and-description__description {

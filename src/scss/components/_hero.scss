@@ -386,22 +386,7 @@
       flex-direction: row;
     }
 
-    &_agency {
-      flex-direction: column;
-
-      @media (min-width: 769px) {
-        flex-direction: row;
-      }
-	  @media (max-width: 1025px) and (min-width: 769px) {
-      flex-direction: column;
-    }
-
-      &__book-a-demo {
-        @media (min-width: 1025px) {
-          max-width: 240px;
-        }
-      }
-    }
+    
   }
 
   &__description {
