@@ -1146,6 +1146,7 @@ section {
   .hero-wrapper__hero__section__buttons-and-description__buttons {
     align-items: center;
     gap: 20px;
+    flex-direction: column !important;
   }
 }
 @media (min-width: 769px) {

@@ -378,6 +378,7 @@
     @media (max-width: 1025px) and (min-width: 769px) {
       align-items: center;
       gap: 20px;
+	   flex-direction: column!important;
     }
 
     @media (min-width: 769px) {
