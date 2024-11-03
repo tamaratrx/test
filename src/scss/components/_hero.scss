@@ -3,7 +3,7 @@
 // 
 
 // Hero Section Styles
-.hero-wrapper-agency {
+.hero-wrapper {
     background: #fff;
 
     &__hero {
@@ -351,7 +351,7 @@
     }
   }
 }
-.hero-wrapper-agency__hero__section__buttons-and-description {
+.hero-wrapper__hero__section__buttons-and-description {
   align-items: stretch;
   display: flex;
   flex-direction: column;
@@ -418,7 +418,7 @@
     }
   }
 }
-.hero-wrapper-agency__hero__section__buttons-and-description__buttons {
+.hero-wrapper__hero__section__buttons-and-description__buttons {
     p {
         text-align: center;
         margin: 10px auto;

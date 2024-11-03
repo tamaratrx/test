@@ -1,24 +1,30 @@
 // 
-// Colorsbackground: #14213D;
+// Colors
 
 // 
 
-$primary: #14213D;
+// Primary Colors
 $primary-color:  #14213D;
 $secondary-color: #ff8c00;
-$secondary: #ff8c00;
-$text-color: #333;
-
 $white: #fff;
 $black: #000;
+
+// Text Colors
+$text-color: #333;
+$hero-btn-text-color: #808A9E;
+$banner-text-color: #4BE2A6;
+
+// Background Colors
 $banner-black: #191919;
 $mobile-links-dark: #00143C;
 $banner-green: #4BE2A6;
-$banner-text-color: #4BE2A6;
-$banner-btn-text-color: #222;
 $grey-bg-color: #E5E5E5;
-$hero-btn-text-color: #808A9E;
+$dark-grey-bg-color: #4D536C;
+$menu-hover-bg-color: #2a446c;
+$drop-menu-hover-bg-color: #f2f6fe;
 
+// Button Colors
+$banner-btn-text-color: #222;
 $button-primary-bg: $primary-color;
 $button-secondary-bg: white;
 $button-secondary-border: $primary-color;
