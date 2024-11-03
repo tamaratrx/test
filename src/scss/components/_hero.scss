@@ -4,7 +4,7 @@
 
 // Hero Section Styles
 .hero-wrapper {
-    background: #fff;
+    background: $white;
 
     &__hero {
         align-items: center;
@@ -91,7 +91,7 @@
                 }
 
                 h1 {
-                    color: #14213D;
+                    color: $primary-color;
                     font-size: 47px;
                     font-style: normal;
                     font-weight: 600;
@@ -99,7 +99,7 @@
                     margin: 0px;
 
                     span {
-                        color: #FCA311;
+                        color: $secondary-color;
                     }
 					
 					@media (max-width: 768px) {
@@ -127,7 +127,7 @@
                 }
 
                 &__description {
-                    color: #14213D!important;
+                    color: $primary-color!important;
                     font-size: 20px;
                     font-weight: 500;
                     letter-spacing: 0.02em;
@@ -293,7 +293,7 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   border: 0;
   border-radius: 7px;
-  color: #fff;
+  color: $white;
   cursor: pointer;
   display: flex;
   font-family: $font-family-base;
@@ -314,40 +314,40 @@
   &__ghost {
     align-items: center;
     background: transparent;
-    border: 1px solid #14213D;
-    color: #14213D;
+    border: 1px solid $primary-color;
+    color: $primary-color;
     height: 42px;
     line-height: 24px;
     padding: 7px 24px;
     transition: background 0.2s ease-in-out;
 
     &:hover {
-      background: #f2f6fe;
+      background: $drop-menu-hover-bg-color;
     }
   }
 
 
   &__primary {
-    background: #14213D !important;
+    background: $primary-color !important;
 
     &:hover {
-      background: #263657 !important;
+      background: $primary-color-hover !important;
     }
   }
 
   &__green-light {
-    background: #4BE2A6 !important;
+    background: $banner-green !important;
 
     &:hover {
-      background: #4eabab !important;
+      background: $banner-green-hover !important;
     }
   }
 
   &__orange {
-    background: #f47d01 !important;
+    background: $secondary-color !important;
 
     &:hover {
-      background: #ee9335 !important;
+      background: $secondary-color-hover !important;
     }
   }
 }

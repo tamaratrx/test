@@ -1,7 +1,5 @@
 /*!
-* Start Bootstrap - WD Test v6.0.7 (#)
-* Copyright 2013-2024 T
-* Licensed under MIT (https://github.com/StartBootstrap/Web Developer Test/blob/master/LICENSE)
+
 */
 //
 // Scripts

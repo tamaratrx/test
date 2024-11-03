@@ -41,7 +41,7 @@
 
             &__text {
                 align-items: center;
-                color: #000;
+                color: $black;
                 display: flex;
                 flex-direction: column;
                 gap: 5px;
@@ -112,7 +112,7 @@
 
 .ratings-module {
     align-items: center;
-    background: #f8f9fa;
+    background: $light-grey-bg-color;
     border-radius: 8px;
     display: flex;
     justify-content: center;
