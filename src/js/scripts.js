@@ -31,11 +31,40 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener("DOMContentLoaded", () => {
     const burger = document.querySelector(".header-wrapper__header__menu__nav__burger");
     const mobileNav = document.querySelector(".header-wrapper__header__expanded");
+    const burgerImage = burger.querySelector("img");
+
+    // Initial burger icon
+    const burgerIcon = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDEwLjVDNyA5LjY3MTU3IDcuNjcxNTcgOSA4LjUgOUgzMS41QzMyLjMyODQgOSAzMyA5LjY3MTU3IDMzIDEwLjVDMzMgMTEuMzI4NCAzMi4zMjg0IDEyIDMxLjUgMTJIOC41QzcuNjcxNTcgMTIgNyAxMS4zMjg0IDcgMTAuNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNyAxOS41QzcgMTguNjcxNiA3LjY3MTU3IDE4IDguNSAxOEgzMS41QzMyLjMyODQgMTggMzMgMTguNjcxNiAzMyAxOS41QzMzIDIwLjMyODQgMzIuMzI4NCAyMSAzMS41IDIxSDguNUM3LjY3MTU3IDIxIDcgMjAuMzI4NCA3IDE5LjVaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTcgMjguNUM3IDI3LjY3MTYgNy42NzE1NyAyNyA4LjUgMjdIMzEuNUMzMi4zMjg0IDI3IDMzIDI3LjY3MTYgMzMgMjguNUMzMyAyOS4zMjg0IDMyLjMyODQgMzAgMzEuNSAzMEg4LjVDNy42NzE1NyAzMCA3IDI5LjMyODQgNyAyOC41WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==";
+
+    // X icon when nav is open
+    const closeIcon = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI4IDI4TDEyIDEyTTI4IDEyTDEyIDI4IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K";
 
     burger.addEventListener("click", () => {
         mobileNav.classList.toggle("show"); // Toggle class to show/hide
+
+        // Change icon based on the visibility of mobile nav
+        if (mobileNav.classList.contains("show")) {
+            burgerImage.src = closeIcon; // Switch to "X" icon
+        } else {
+            burgerImage.src = burgerIcon; // Switch back to burger icon
+        }
     });
+
+    // Function to close mobile nav if screen width is greater than 1025px
+    const closeMobileNav = () => {
+        if (window.innerWidth > 1025) {
+            mobileNav.classList.remove("show"); // Remove the show class
+            burgerImage.src = burgerIcon; // Reset to burger icon
+        }
+    };
+
+    // Add event listener for window resize to close mobile nav
+    window.addEventListener("resize", closeMobileNav);
+
+  
 });
+
+
 
 
 

@@ -4,7 +4,13 @@
 
 // Rating Section Styles
 
+// 
+// Rating
+// 
+
+// Rating Section Styles
 .rating-wrapper {
+    padding: 24px 0;
     background-color: $grey-bg-color;
 
     .rating-inner {
@@ -32,6 +38,52 @@
                 max-width: 380px;
                 padding: 20.5px;
             }
+
+            &__text {
+                align-items: center;
+                color: #000;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                justify-content: space-between;
+
+                @media (min-width: 769px) {
+                    gap: 8px;
+                }
+
+                @media (min-width: 1025px) {
+                    gap: 5px;
+                }
+
+                &__number_black {
+                    color: $black;
+                    font-size: 24px;
+                    font-weight: 600;
+                    letter-spacing: 0.01em;
+                    line-height: 32px;
+                    text-align: center;
+
+                    // Mobile styles for number-small
+                    &.number-small {
+                        font-size: 17px; // Font size for mobile
+                    }
+                }
+
+                &__description_black {
+                    color: $black;
+                    font-size: 17px;
+                    font-weight: 500;
+                    line-height: 22px;
+                    opacity: 0.6;
+                    letter-spacing: 0.02em;
+                    text-align: center;
+                    text-transform: uppercase;
+
+                    @media (min-width: 1025px) {
+                        line-height: 130%;
+                    }
+                }
+            }
         }
 
         &__rating-logos {
@@ -57,23 +109,75 @@
         }
     }
 }
+
 .ratings-module {
     align-items: center;
     background: #f8f9fa;
     border-radius: 8px;
     display: flex;
     justify-content: center;
-    padding: 16px 18px 16px 16px;
+    padding: 5px;
     transition: 0.3s;
 
-    // Media query for mobile and tablet screens
     @media (max-width: 768px) {
         display: flex; // Ensures the module is displayed
         width: auto; // Adjust as needed
     }
 
-    // Media query for larger screens
     @media (max-width: 1250px) {
         width: 328px;
+    }
+}
+
+.rating-inner__agencies__text {
+    
+    &__number_black {
+        display: none; 
+
+        &.number-small {
+            font-size: 17px; // Font size for mobile
+        }
+    }
+
+    &__description_black {
+        display: none; 
+    }
+
+    // For larger screens, show the larger number and description
+    @media (min-width: 1250px) {
+        .number-large {
+            display: block; // Show on larger screens
+        }
+        .number-small {
+            display: none; // Hide on larger screens
+        }
+        .description-large {
+            display: block; // Show on larger screens
+        }
+        .description-small {
+            display: none; // Hide on larger screens
+        }
+    }
+
+    // For mobile and tablet screens
+    @media (max-width: 1250px) {
+        .number-large {
+            display: none; // Hide on mobile and tablet
+        }
+        .number-small {
+            display: block; // Show on mobile and tablet
+        }
+        .description-large {
+            display: none; // Hide on mobile and tablet
+        }
+        .description-small {
+            display: block; // Show on mobile and tablet
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .rating-inner__agencies__icon {
+        display: none; 
     }
 }
